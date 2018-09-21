@@ -1,0 +1,2 @@
+"use strict";var ftrSmallContainer=document.getElementById("js-footer-small"),ftrSmallcontent=document.createElement("div");ftrSmallcontent.className="footer-small__content",ftrSmallcontent.innerHTML='\n<div><p>Copyright Grupo Progestion Todos los derechos reservados.</p></div>\n<div>\n<a href="">Acceso Clientes</a>\n<a href="">Intranet</a>\n<a href="">Cloud Grupo</a>\n<a href="">Crece TV</a>\n<a href="">Liquidaciones</a>\n<a href="">Webmail Progestion</a>\n</div>\n',ftrSmallContainer.appendChild(ftrSmallcontent);
+//# sourceMappingURL=footer-small.js.map

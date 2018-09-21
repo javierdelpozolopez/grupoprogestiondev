@@ -1,0 +1,37 @@
+// Site name
+.site-name {
+  font-size: 2.2em;
+  line-height: 1.3em;
+  font-weight: 300;
+  padding: 0 0 0.5em;
+  margin: 0;
+}
+
+.header__content > div{
+    display: flex;
+    flex-wrap: nowrap;
+    align-items: center;
+    justify-content: space-between;
+    padding: 1rem 0;
+
+}
+
+.search-block-form{
+  form{
+    display: flex;
+    flex-wrap: nowrap;
+  }
+  .form-item{
+    padding: .2rem .5rem;
+  }
+}
+
+.hdr{
+  &-contact__content{
+    text-align: right;
+    font-size: .7rem;
+    p{
+      padding: 0 0 0 .1rem;
+    }
+  }
+}

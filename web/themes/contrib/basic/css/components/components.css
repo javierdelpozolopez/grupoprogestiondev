@@ -1,0 +1,67 @@
+.breadcrumb li {
+  list-style-type: none;
+  display: inline-block;
+}
+
+#navigation li {
+  list-style-type: none;
+}
+
+.site-name {
+  font-size: 2.2em;
+  line-height: 1.3em;
+  font-weight: 300;
+  padding: 0 0 0.5em;
+  margin: 0;
+}
+
+.header__content > div {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-wrap: nowrap;
+      flex-wrap: nowrap;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  padding: 16px 0;
+  padding: 1rem 0;
+}
+
+.search-block-form form {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-wrap: nowrap;
+      flex-wrap: nowrap;
+}
+
+.search-block-form .form-item {
+  padding: 3.2px 8px;
+  padding: .2rem .5rem;
+}
+
+.hdr-contact__content {
+  text-align: right;
+  font-size: 11.2px;
+  font-size: .7rem;
+}
+
+.hdr-contact__content p {
+  padding: 0 0 0 1.6px;
+  padding: 0 0 0 .1rem;
+}
+
+.pager__item {
+  display: inline;
+}
+
+.pager__item a {
+  display: inline-block;
+}
+
+/*# sourceMappingURL=data:application/json;base64,eyJ2ZXJzaW9uIjozLCJzb3VyY2VzIjpbImNvbXBvbmVudHMvY29tcG9uZW50cy9fYnJlYWRjcnVtYi5zY3NzIiwiY29tcG9uZW50cy9jb21wb25lbnRzL19uYXZpZ2F0aW9uLnNjc3MiLCJjb21wb25lbnRzL2NvbXBvbmVudHMvX3NpdGUtbmFtZS5zY3NzIiwiY29tcG9uZW50cy9jb21wb25lbnRzLmNzcyIsImNvbXBvbmVudHMvY29tcG9uZW50cy9fcGFnZXIuc2NzcyJdLCJuYW1lcyI6W10sIm1hcHBpbmdzIjoiQUFDQTtFQUVJLHNCQUFxQjtFQUNyQixzQkFBcUI7Q0FDdEI7O0FDSkg7RUFFSSxzQkFBcUI7Q0FDdEI7O0FDSEg7RUFDRSxpQkFBZ0I7RUFDaEIsbUJBQWtCO0VBQ2xCLGlCQUFnQjtFQUNoQixtQkFBa0I7RUFDbEIsVUFBUztDQUNWOztBQUVEO0VBQ0kscUJBQWE7RUFDYixxQkFBaUI7RUFDakIsY0FBYTtFQUNiLHNCQUFpQjtNQUNqQixrQkFBZTtFQUVsQiwwQkFBQTtNQ1FLLHVCQUF1QjtVRE43QixvQkFDTTtFQUNGLDBCQUFhO01BQ2IsdUJBQWlCO1VBQ2xCLCtCQUFBO0VDT0QsZ0JBQWdCO0VBQWhCLGdCQUFnQjtDRFhsQjs7QUNjQTtFQUNFLHFCQUFxQjtFREpyQixxQkFBa0I7RUFDaEIsY0FBWTtFQUNaLHNCQUFnQjtNQUlqQixrQkFBQTtDQ0dGOztBQUVEO0VETkssbUJBQUE7RUFBQSxxQkFBQTtDQ1FKOztBQUVEO0VDdENDLGtCQUFBO0VEd0NDLGtCQUFpQjtFQUFqQixpQkFBaUI7Q0M5Q25COztBRGlEQTtFQUNFLHFCQUFxQjtFQUFyQixxQkFBcUI7Q0FDdEI7O0FBRUQ7RUFDRSxnQkFBZ0I7Q0FDakI7O0FBRUQ7RUFDRSxzQkFBc0I7Q0FDdkIiLCJmaWxlIjoidG8uY3NzIn0= */
+/*# sourceMappingURL=components.css.map */

@@ -1,0 +1,2 @@
+"use strict";var hdrContactInfo=document.getElementById("js-hdr-contact-info"),hdrContContent=document.createElement("div");hdrContContent.className="hdr-contact__content",hdrContContent.innerHTML='\n    <p><span>Casa Matriz:</span>Crescente Errázuriz 1875, Ñuñoa - Stgo, Chile</p>\n    <p>Tel: (+56 2) 2433 6500</p>\n    <p> <a href="https://www.one.grupoprogestion.com">Acceso Clientes</a></p>\n',hdrContactInfo.appendChild(hdrContContent);
+//# sourceMappingURL=header-contact-info.js.map
