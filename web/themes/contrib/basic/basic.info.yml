@@ -18,7 +18,9 @@ regions:
   page_bottom: 'Page bottom'
   highlighted: Highlighted
   slider: 'slider'
+  page_title: 'page Title'
   difrent_bg_content: Difrent bg content
+  two_grid_content: 'two-grid-content'
   content: Content
   contact_info: 'Contact Info'
   news: 'news'

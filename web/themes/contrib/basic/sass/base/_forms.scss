@@ -19,7 +19,8 @@ legend {
 label {
   display: block;
   font-weight: normal;
-  margin-bottom: $small-spacing / 2;
+  margin-bottom: .5rem;
+  margin-top: .7rem;
 }
 
 input,
@@ -34,11 +35,11 @@ textarea {
   appearance: none;
   background-color: $_form-background-color;
   border: $base-border;
-  border-radius: $base-border-radius;
+  border-radius: 4px;
   box-shadow: $_form-box-shadow;
   box-sizing: border-box;
   margin-bottom: $small-spacing;
-  padding: $base-spacing / 4;
+  padding: .7rem;
   margin: 0 .3rem;
   transition: border-color $base-duration $base-timing;
   width: 100%;
@@ -69,11 +70,11 @@ textarea {
 
 textarea {
   resize: vertical;
+  margin-bottom: .7rem;
 }
 
 [type="checkbox"],
 [type="radio"] {
-  display: inline;
   margin-right: $small-spacing / 2;
 }
 
@@ -86,6 +87,8 @@ select {
   margin-bottom: $base-spacing;
   max-width: 100%;
   width: auto;
+  padding: .7rem;
+  border-radius: 4px;
 }
 
 [type="checkbox"],
@@ -102,4 +105,14 @@ select {
 // Required as of Bourbon 5, since the otu put of $all-text-inputs has reduced in specificity from Bourbon 4
 input[type="search"] {
   box-sizing: border-box;
+}
+
+.flexbox-row-cs{
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: flex-start;
+}
+.padding-0-1-0-0{
+  padding: 0 1rem;
 }

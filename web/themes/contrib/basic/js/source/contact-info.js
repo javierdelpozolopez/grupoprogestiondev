@@ -1,5 +1,3 @@
-console.log('contact-info')
-
 const   contactInfoContainer = document.getElementById('js-contactcontainer'),
         contactInfoContent = document.createElement('div'),
         contactInfoImgPhone = new Image(),
@@ -53,4 +51,6 @@ contactInfoContent.innerHTML = `
 </div>
 `;
 
-contactInfoContainer.appendChild(contactInfoContent)
+if(contactInfoContainer){
+    contactInfoContainer.appendChild(contactInfoContent)
+}

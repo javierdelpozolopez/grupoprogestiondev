@@ -19,6 +19,7 @@
       // Execute code once the DOM is ready. $(handler) not required
       // within Drupal.behaviors.
       $(window).on('load', function () {
+
       });
 
       $(window).on('resize', function () {

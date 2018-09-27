@@ -37,11 +37,20 @@
             {{ page.slider }}
       </div>
     </div>
+    {% if page.page_title %}
+    <div class="container-bg__title">
+      <div class="container">
+            {{ page.page_title }}
+      </div>
+    </div>
+    {% endif %}
+    {% if page.difrent_bg_content %}
     <div class="container-bg__secondary__color">
       <div class="container">
             {{ page.difrent_bg_content }}
       </div>
     </div>
+    {% endif %}
     <div class="container">
       <div id="content-wrapper">
         <section class="main-content" id="content">
@@ -73,6 +82,16 @@
 
           </div><!-- /#content-header -->
 
+          {% if page.two_grid_content |render %}
+          <div id="two-grid-content" class="grid grid-2 padding-1-0-1-0">
+          <div class="flex-col-ss">
+              <h1 class="color-primary">¡Escríbenos!</h1>
+              <h2>te responderemos a la brevedad</h2>
+            </div>
+            {{ page.two_grid_content }}
+          </div>
+        {% endif %}
+
           <div id="content-area" class="content-area">
             {{ page.content }}
           </div>
@@ -93,7 +112,7 @@
 
       </div><!-- /#content-wrapper -->
     </div>
-    <div class="container-bg__primary__color">
+    <div class="container-bg__primary__color margin-1-0-1-0">
       <div class="container">
             {{ page.contact_info }}
       </div>

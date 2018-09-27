@@ -8,7 +8,10 @@
 @import "layout--grid";
 
 
-
+//<div class="" id="js-20-anos"></div>
+//<div class="grid grid-3" id="js-mision-vision"></div>
+//<div class="flex flex-col-center-center" id="js-valores-main"></div>
+//<div class="" id="js-valores"></div>
 
 
 .grid{
@@ -17,6 +20,10 @@
     grid-gap: 10px;
     &-2{
         grid-template-columns: 1fr 1fr;
+        &--20-80{
+            grid-template-columns: 25% 75%;
+            grid-gap: 30px;
+        }
     }
     &-3{
         grid-template-columns: 1fr 1fr 1fr;
@@ -24,10 +31,29 @@
     &-4{
         grid-template-columns: 1fr 1fr 1fr 1fr;
     }
+    &-5{
+        grid-template-columns: 1fr 1fr 1fr 1fr 1fr;
+    }
+    &-6{
+        grid-template-columns: 1fr 1fr 1fr 1fr 1fr 1fr;
+    }
+}
+ 
+.container-bg__title{
+    background-image: url('../../images/source/bg-title.jpg');
+    background-position: center;
+    background-size: cover;
+    background-repeat: repeat;
+    background-color: $primary-color;
+    color: white;
+    padding: 2.5rem 0;
+    h1{
+        margin: 0;
+    }
 }
 .content{
     .views-element-container{
-        padding: 3rem 0;
+        padding: 1.5rem 0;
     }
 }
 .content-area{
@@ -47,13 +73,36 @@
 .padding-3-0rem{
     padding: 3rem 0;
 }
+.padding-1-0-1-0{
+    padding: 1rem 0 1rem 0;
+}
+.padding-2-0-2-0{
+    padding: 2rem 0 2rem 0;
+}
+.padding-3-0-3-0{
+    padding: 3rem 0 3rem 0;
+}
+.padding-2-1-2-1{
+    padding: 2rem 1rem 2rem 1rem;
+}
+.margin-1-0-1-0{
+    margin: 1rem 0;
+}
+.color-primary{
+    color: $primary-color;
+}
 .flex-center-top{
     display: flex;
     flex-direction: column;
     align-items: center;
     justify-content: space-evenly;
 }
-
+.flex-col-cc{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
 .flex-start-start{
     display: flex;
     flex-direction: row;
@@ -68,6 +117,14 @@
     align-items: flex-start;
     justify-content: flex-start;
 }
+
+.flex-row-ssb{
+    display: flex;
+    flex-wrap: nowrap;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-between;
+}
 .border-blue{
     border: 1px solid $primary-color;
 }
@@ -79,9 +136,11 @@
     border-radius: 8px;
     background-color: white;
     box-shadow: 0px 0px 8px 1px rgba(10, 10, 10, 0.1);
+    &__bg-blue{
+        background-color: $primary-color;
+    }
     &__img{
         width: 100%;
-        height: 150px;
         border-top-right-radius: 8px;
         border-top-left-radius: 8px;
         background-position: center;
@@ -94,6 +153,9 @@
         padding: 0;
         margin: 0 auto;
         }
+    }
+    &__img-bg{
+        height: 150px;
     }
     &__info-area{
         padding: 1rem;
@@ -117,6 +179,11 @@
         width: auto;
         height: 120px;
     }
+    &__icon-60px{
+        width: auto;
+        height: 80px;
+        padding-bottom: 1rem;
+    }
 }
 
 //estilos para las tarjetas de las empresas
@@ -129,7 +196,6 @@
 .container-bg__secondary__color{
     width: 100%;
     margin: auto;
-    padding: 3rem;
     background-color: #F5F5FB;
 }
 
@@ -249,6 +315,37 @@
     } 
 }
 
+// rrss
+
+.rrss__content{
+    display: flex;
+    flex-wrap: nowrap;
+    align-items: center;
+    justify-content: flex-end;
+}
+.icon{
+    width: 45px;
+    padding: 4px 5px;
+    transition: transform 1s ease,
+                background-color 2s ease;
+    background-color: rgba(50, 50, 50, 0.1);
+    border-radius: 50%;
+    &:hover{
+        transform: scale(1.1,1.1);
+        background-color: $primary-color;
+    }
+    &-normal{
+        height: 50px;
+    }
+    &-big{
+        width: 200px;
+    }
+    &-bigger{
+        width: 320px;
+    }
+}
+
+
 // footer
 
 
@@ -269,7 +366,7 @@ footer{
     padding: 2rem 0;
 }
 footer .block-sitebranding{
-    grid-column: 1 / 5;
+    grid-column: 1 / 4;
     grid-row: 1; 
 }
 
@@ -295,4 +392,107 @@ footer .block-sitebranding{
             text-decoration-line: underline;
         }
     }
+}
+
+// nosotros
+
+.aniv{
+    &__img{
+        grid-column: 1 / 3;
+    }
+    &__text{
+        grid-column: 4 / 7;
+    }
+}
+
+
+.mision-vision{
+    &__hero{
+        grid-column: 1 / 4;
+    }
+    &__text{
+        grid-column: 5 / 7;
+    }
+}
+
+.valores-main{
+    grid-column: 3 / 5;
+}
+
+.before-icon{
+    padding-left: 25px;
+    position: relative;
+}
+
+.icon-gps{
+    &:before{
+        content: '';
+        width: 21px;
+        height: 21px;
+        position: absolute;
+        top: 0;
+        left: 0;
+        background-position: center;
+        background-repeat: no-repeat;
+        background-size: contain;
+        background-image: url(../../images/source/svg/icon-gps.svg);
+    }
+}
+.icon-movil{
+    &:before{
+        content: '';
+        width: 21px;
+        height: 21px;
+        position: absolute;
+        top: 0;
+        left: 0;
+        background-position: center;
+        background-repeat: no-repeat;
+        background-size: contain;
+        background-image: url(../../images/source/svg/icon-phone-blue.svg);
+    }
+}
+
+.services-menu__ul{
+    li{
+        width: 100%;
+        padding: .5rem .3rem;
+        border-bottom: 1px solid $medium-gray;
+        transition: background-color .1s ease,
+                    padding-left .1s ease;
+        &:hover{
+            background-color: $light-gray;
+            padding-left: .7rem;
+        }
+        &:active{
+            background-color: $primary-color;
+            color: white;
+        }
+    }
+}
+
+.btn__active{
+    background-color: $primary-color;
+    color: white;
+}
+
+.list-decorate{
+    padding-left: 15px;
+    li{
+        list-style: circle;
+        color: $primary-color;
+    }
+}
+
+.service__emp{
+    padding: 1rem;
+    border-radius: 8px;
+    border: 1px solid $light-gray;
+}
+
+.img-100w{
+    width: 100%;
+}
+.border-radius-8{
+    border-radius: 8px;
 }
