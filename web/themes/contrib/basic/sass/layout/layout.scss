@@ -7,13 +7,6 @@
 // while also maintaining Drupals SMACSS structure.
 @import "layout--grid";
 
-
-//<div class="" id="js-20-anos"></div>
-//<div class="grid grid-3" id="js-mision-vision"></div>
-//<div class="flex flex-col-center-center" id="js-valores-main"></div>
-//<div class="" id="js-valores"></div>
-
-
 .grid{
     display: grid;
     grid-template-rows: auto;
@@ -495,4 +488,56 @@ footer .block-sitebranding{
 }
 .border-radius-8{
     border-radius: 8px;
+}
+
+.grid-emp{
+    &__container-one{
+        display: grid;
+        grid-template-columns: 1fr 1fr 1fr 10px 80px 1fr 1fr;
+        grid-template-rows: 80px auto 50px;
+    }
+    &__img{
+        background-repeat: no-repeat;
+        background-position: center;
+        background-size: cover;
+        position: relative;
+        overflow: visible;
+        justify-self: stretch;
+        grid-column: 1 / 4;
+        grid-row: 1 / 3;
+    }
+    &__icon{
+        border-radius: 50%;
+        height: 50px;
+        width: 50px;
+        border: 1px solid red;
+        justify-self: end;
+        align-self: center;
+        margin-right: 20px;
+        grid-column: 5 / 6;
+        grid-row: 1 / 2;
+    }
+    &__title{
+        color: red;
+        justify-self: start;
+        align-self: center;
+        grid-column: 6 / 8;
+        grid-row: 1 / 2;
+        h2{
+            margin: 0;
+        }
+    }
+    &__box{
+        border: 2px solid red;
+        padding: 2rem;
+        display: grid;
+        grid-template-columns: repeat(5, 1fr);
+        grid-template-rows: 1fr;
+        grid-column: 2 / 8;
+        grid-row: 2 / 4;
+        z-index: 10;
+        ul{
+            grid-column: 4 / 7;
+        }
+    }
 }

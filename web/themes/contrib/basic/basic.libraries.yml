@@ -22,6 +22,7 @@ global:
     js/build/sucursales.js: {}
     js/build/servicios.js: {}
     js/build/trabaja-con-nosotros.js: {}
+    js/build/emp-disecom.js: {} 
   # dependencies:
   #   - core/drupal
   #   - core/jquery
