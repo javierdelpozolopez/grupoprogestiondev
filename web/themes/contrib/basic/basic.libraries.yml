@@ -23,6 +23,9 @@ global:
     js/build/servicios.js: {}
     js/build/trabaja-con-nosotros.js: {}
     js/build/emp-disecom.js: {} 
+    js/build/emp-audisis.js: {}
+    js/build/emp-ensti.js: {}
+    js/build/emp-progestion.js: {} 
   # dependencies:
   #   - core/drupal
   #   - core/jquery
