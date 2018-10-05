@@ -37,6 +37,7 @@ body {
 
   margin: auto;
   max-width: $max-screen;
+  padding: 0rem 2rem;
 }
 
 #content-wrapper {
@@ -168,4 +169,16 @@ body {
 .breadcrumb,
 .node {
   clear: both;
+}
+
+#header{
+  padding: 32px 2rem;
+}
+@media only screen and (max-width: 720px){
+  #header{
+    padding: 0;
+    .container{
+      padding: 0 .5rem;
+    }
+  }
 }

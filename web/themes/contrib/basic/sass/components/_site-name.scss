@@ -35,3 +35,12 @@
     }
   }
 }
+
+@media only screen and (max-width: 720px){
+  .hdr{
+    display: none;
+    &-contact__content{
+      display: none;
+    }
+  }
+}

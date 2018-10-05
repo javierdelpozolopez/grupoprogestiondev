@@ -25,7 +25,8 @@ global:
     js/build/emp-disecom.js: {} 
     js/build/emp-audisis.js: {}
     js/build/emp-ensti.js: {}
-    js/build/emp-progestion.js: {} 
+    js/build/emp-progestion.js: {}
+    js/build/menu.js: {} 
   # dependencies:
   #   - core/drupal
   #   - core/jquery

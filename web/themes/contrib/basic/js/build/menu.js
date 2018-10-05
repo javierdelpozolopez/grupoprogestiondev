@@ -1,0 +1,2 @@
+"use strict";var hamburgerMenu=document.getElementById("js-hamburger-menu");hamburgerMenu.classList="hamburger-menu";var injectMenu=function(e){e<720?console.log("Se inyectó el menú xoro"):console.log("se borró")},callMenu=function(){document.getElementById("js-main-menu").classList.toggle("main-menu__active")};hamburgerMenu&&(window.addEventListener("resize",function(e){injectMenu(window.innerWidth)}),hamburgerMenu.addEventListener("click",function(e){callMenu()}));
+//# sourceMappingURL=menu.js.map
