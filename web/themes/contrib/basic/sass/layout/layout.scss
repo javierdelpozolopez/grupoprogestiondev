@@ -7,6 +7,9 @@
 // while also maintaining Drupals SMACSS structure.
 @import "layout--grid";
 
+.logo{
+    height: 20px;
+}
 
 .max-w-720{
     max-width: 720px;
@@ -366,84 +369,6 @@
     }
 }
 
-// main--menu
-
-.main-menu__container{
-    background-color: $primary-color;
-    margin: 0 auto;
-}
-.menu--main{
-    width: 100%;
-    .menu{
-        width: 100%;
-        display: flex;
-        flex-wrap: nowrap;
-        align-content: center;
-        justify-content: space-evenly;
-        .menu-item{
-            display: flex;
-            align-items: center;
-            justify-content: center;
-            flex-grow: 1;
-            a{  
-                width: 100%;
-                text-align: center;
-                padding: 1.5rem;
-                color: white;
-                &:hover{
-                    background-color: white;
-                    color: $primary-color;
-                }
-            }
-        }
-    } 
-}
-
-.hamburger-menu{
-    display: none;
-}
-@media only screen and (max-width: 720px){
-    .hamburger-menu{
-        display: flex;
-        background-color: red;
-        z-index: 3000;
-        width: 40px;
-        height: 40px;
-        position: fixed;
-        top: 15px;
-        right: 10px;
-        &:before{
-            content: '';
-            width: 40px;
-            height: 4px;
-            background-color: $primary-color;
-            box-shadow: 0 8px,
-                        0 16px;
-            position: absolute;
-            top: 0;
-            left: 0;
-        }
-    }
-    .main-menu__container{
-        position: fixed;
-        top: 0;
-        left: 100%;
-        z-index: 2000;
-        background-color: $primary-color;
-        height: 100vh;
-        width: 100vw;
-        opacity: .95;
-        padding-top: 20%;
-    }
-    .menu--main{
-        .menu{
-            flex-direction: column;
-        } 
-    }
-    .main-menu__active{
-        left: 0%;
-    }
-}
 // rrss
 
 .rrss__content{
