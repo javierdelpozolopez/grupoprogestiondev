@@ -40,6 +40,10 @@ if(menuId.textContent = 'empresas'){
     logoProgestion.src = imageUrl + 'svg/logo-progestion.svg';
 
     empBoxContent.innerHTML = `
+    <div class="flex-row-ssb">
+        <div class="icon-close" id="js-close-menu-empresas"></div>
+        <h1>Todas nuestras empresas forman parte de nuestra visión 360.</h1>
+    </div>
     <div class="grid grid-3">
         <div class="flex-col-ss padding-1-5rem">
             <img class="logo" src="${logoProgestion.src}" alt="logo progestion">

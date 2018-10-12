@@ -38,7 +38,7 @@ gulp.task('sass', function () {
 		.pipe(pixrem())
 		.pipe(sourcemaps.write('.'))
 		.pipe(gulp.dest(paths.sassDest))
-		.pipe(bs.stream());
+		//.pipe(bs.stream());
 });
 
 gulp.task('js', function() {
@@ -72,18 +72,18 @@ gulp.task('svgmin', function() {
 
 // Watch files for change and set Browser Sync
 gulp.task('watch', function() {
-	bs.init({
-		files: [
-			'css/**/*.css',
-			'templates/**/*.twig',
-			'images/optimized/**/*.{png,jpg,gif,svg}',
-			'js/build/**/*.js',
-			'*.theme'
-		],
-		proxy: argv.proxy
-	});
+	//bs.init({
+	//	files: [
+	//		'css/**/*.css',
+	//		'templates/**/*.twig',
+	//		'images/optimized/**/*.{png,jpg,gif,svg}',
+	//		'js/build/**/*.js',
+	//		'*.theme'
+	//	],
+	//	proxy: argv.proxy
+	//});
 	gulp.watch(paths.sassSrc, ['sass']);
-	gulp.watch(paths.jsSrc, ['js']).on('change', bs.reload);
+	gulp.watch(paths.jsSrc, ['js']);
 });
  
 // Default task
