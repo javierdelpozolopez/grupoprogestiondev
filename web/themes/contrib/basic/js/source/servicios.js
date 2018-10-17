@@ -20,7 +20,7 @@ if(menuServicesId){
     serviceAudisisImg.src = imageUrl + '/emp-audisis-650x260.jpg';
     
     serviceHeroContent.innerHTML = `
-    <div class="grid grid-2--20-80 padding-3-0rem">
+    <div class="grid grid-2--20-80 padding-3-0">
         <div class="">
         <img class="icon-big" src="${serviceHeroLogo.src}" alt="logo 360">
         </div>

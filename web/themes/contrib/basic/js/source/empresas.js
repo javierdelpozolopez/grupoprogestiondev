@@ -9,7 +9,7 @@ const   imgEnsti = new Image(),
         logoDisecom = new Image(),
         logoProgestion = new Image();
 
-const imageUrl = './../web/themes/contrib/basic/images/source/';
+const imageUrl = './themes/contrib/basic/images/source/';
 const empContainer = document.getElementById('js-emp')
 
 if(empContainer){

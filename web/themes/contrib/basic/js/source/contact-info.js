@@ -9,8 +9,8 @@ const   contactInfoContainer = document.getElementById('js-contactcontainer'),
 contactInfoContent.className = 'contact-info__content'
 contactInfoImgPhone.src = imageUrl + 'svg/icon-phone.svg'
 contactInfoImgMail.src = imageUrl + 'svg/icon-mail.svg'
-contactInfoImgChile.src = imageUrl + '/bandera-chile.png'
-contactInfoImgPeru.src = imageUrl + '/bandera-peru.png'
+contactInfoImgChile.src = imageUrl + 'bandera-chile.png'
+contactInfoImgPeru.src = imageUrl + 'bandera-peru.png'
 
 contactInfoContent.innerHTML = `
 <div class="contact-info__title"><h1 class="text__white">CONTÁCTANOS A:</h1></div>
