@@ -1,7 +1,9 @@
+// Menu Responsivo - activación del hamburger menu.
+
 const hamburgerMenu = document.getElementById('js-hamburger-menu')
 hamburgerMenu.classList = 'hamburger-menu'
 
-
+// Injecta el menu solo si el viewport es menor a 720px
 const injectMenu = innerWidth => {
     if(innerWidth < 720){
         console.log('Se inyectó el menú xoro')
@@ -9,12 +11,12 @@ const injectMenu = innerWidth => {
         console.log('se borró')
     }
 }
-
+// Función para llamar al menú
 const callMenu = () => {
         const mainMenu = document.getElementById('js-main-menu')
         mainMenu.classList.toggle('main-menu__active')
 }
-
+// Si el viewport es agrandado o achicado, eliminina el menu.
 if(hamburgerMenu){
     window.addEventListener('resize', e => {
         injectMenu(window.innerWidth)
@@ -24,13 +26,39 @@ if(hamburgerMenu){
     })
 }
 
+
+// Imprime el Main Menu y lo inyecta en el HTML
+const   mainMenuContainerId = document.getElementById('js-main-menu'),
+        mainMenuContent = document.createElement('div')
+
+mainMenuContent.classList = 'menu--main__content'
+
+mainMenuContent.innerHTML = `
+<ul>
+<li><a href="/inicio">Home</a></li>
+<li><a href="" id="js-main-menu-empresas">Empresas</a></li>
+<li><a href="/servicios">Servicios</a></li>
+<li><a href="/nosotros">Nosotros</a></li>
+<li><a href="/blog">Blog</a></li>
+<li><a href="/trabaja-con-nosotros">Cantidatos</a></li>
+<li><a href="/contacto">Contacto</a></li>
+</ul>
+`
+
+if(mainMenuContainerId){
+    mainMenuContainerId.appendChild(mainMenuContent)
+}
+
+
+
+// Float Menu para las Empresas.
 const   menuId = document.getElementById('js-main-menu-empresas'),
         empBoxContainer = document.createElement('div'),
         empBoxContent = document.createElement('div')
 
-menuId.classList = 'menu-emp__active'
-empBoxContainer.classList = 'menu-emp__container'
-empBoxContent.classList = 'menu-emp__content'
+menuId.classList = 'menu-float__active'
+empBoxContainer.classList = 'menu-float__container'
+empBoxContent.classList = 'menu-float__content'
 
 if(menuId.textContent = 'empresas'){
     logoEnsti.src = imageUrl + 'svg/logo-ensti.svg';
@@ -47,48 +75,50 @@ if(menuId.textContent = 'empresas'){
     <div class="grid grid-3">
         <div class="flex-col-ss padding-1-5rem">
             <img class="logo" src="${logoProgestion.src}" alt="logo progestion">
-            <h3>Outsourcing, selección y gestión integral.</h3>
+            <h4>Outsourcing, selección y gestión integral.</h4>
             <a href="">Más información</a>
         </div>
         <div class="flex-col-ss padding-1-5rem">
             <img class="logo" src="${logoEnsti.src}" alt="logo ensti">
-            <h3>Servicios Transitorios y subcontratación.</h3>
+            <h4>Servicios Transitorios y subcontratación.</h4>
             <a href="">Más información</a>
         </div>
         <div class="flex-col-ss padding-1-5rem">
             <img class="logo" src="${logoAudisis.src}" alt="logo audisis">
-            <h3>Desarrollo de tecnología e inteligencia de negocios.</h3>
+            <h4>Desarrollo de tecnología e inteligencia de negocios.</h4>
             <a href="">Más información</a>
         </div>
         <div class="flex-col-ss padding-1-5rem">
             <img class="logo" src="${logoCrece.src}" alt="logo crece">
-            <h3>Capacitaciones por código Sence o privadas.</h3>
+            <h4>Capacitaciones por código Sence o privadas.</h4>
             <a href="">Más información</a>
         </div>
         <div class="flex-col-ss padding-1-5rem">
             <img class="logo" src="${logoDisecom.src}" alt="logo disecom">
-            <h3>Outsourcing, selección y gestión integral</h3>
+            <h4>Outsourcing, selección y gestión integral</h4>
             <a href="">Más información</a>
         </div>
         <div class="flex-col-ss padding-1-5rem">
             <img class="logo" src="" alt="logo facility services">
-            <h3>Compra reservas y cotizaciones</h3>
+            <h4>Compra reservas y cotizaciones</h4>
             <a href="">Más información</a>
         </div>
     </div>
     `
     empBoxContainer.appendChild(empBoxContent)
 
-    menuId.addEventListener('mouseover', (e) => {
-        e.stopPropagation
+    menuId.addEventListener('click', (e) => {
         e.preventDefault
+        e.stopPropagation
         var validator = false
+        console.log('he pinchado aquí')
         if(validator == false){
             menuId.appendChild(empBoxContainer)
         var validator = true;
             console.log('el menu empresas aparece')
         }else {
-            console.log('ya se imprimió el menú')
+            menuId.removeChild(empBoxContainer)
+            console.log('el menu se borra')
             var validator = false
         }
     })

@@ -2,49 +2,49 @@
 
 .main-menu__container{
     background-color: $primary-color;
-    margin: 0 auto;
 }
 .menu--main{
-    width: 100%;
-    .menu{
+    &__content{
         width: 100%;
-        display: flex;
-        flex-wrap: nowrap;
-        align-content: center;
-        justify-content: space-evenly;
-        .menu-item{
+        max-width: 1280px;
+        margin: 0 auto;
+        ul{
+            width: 100%;
+            display: flex;
+            flex-wrap: nowrap;
+            align-content: center;
+            justify-content: space-evenly;
+            li{
             display: flex;
             align-items: center;
             justify-content: center;
             flex-grow: 1;
-            a{  
-                width: 100%;
-                text-align: center;
-                padding: 1.5rem;
-                color: white;
-                &:hover{
-                    background-color: white;
-                    color: $primary-color;
+                a{
+                    width: 100%;
+                    text-align: center;
+                    padding: 1.5rem;
+                    color: white;
+                    &:hover{
+                        background-color: white;
+                        color: $primary-color;
+                    }
                 }
             }
         }
     } 
 }
-.menu-item--expanded{
-    ul{
-        display: none;
-    }
-}
+
 .hamburger-menu{
     display: none;
 }
-.menu-emp__active{
+.menu-float__active{
     position: relative;
 }
-.menu-emp__container{
+.menu-float__container{
     position: absolute;
-    top: 100%;
+    top: 105%;
     left: 0;
+    width: 900px;
     background-color: white;
     border-radius: 4px;
     z-index: 10000;
@@ -83,17 +83,10 @@
         opacity: .95;
         padding-top: 20%;
     }
-    .menu--main{
-        .menu{
-            flex-direction: column;
-        } 
+    .menu--main__content ul{
+            flex-direction: column; 
     }
     .main-menu__active{
         left: 0%;
-    }
-    .menu-item--expanded{
-        ul{
-            display: block;
-        }
     }
 }
