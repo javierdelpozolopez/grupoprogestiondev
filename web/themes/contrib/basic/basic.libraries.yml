@@ -12,6 +12,7 @@ global:
       css/theme/print.css: { media: print }
   js:
     js/modernizr.js: {}
+    js/build/const.js: {}
     js/build/scripts.js: {}
     js/build/empresas.js: {}
     js/build/contact-info.js: {}
