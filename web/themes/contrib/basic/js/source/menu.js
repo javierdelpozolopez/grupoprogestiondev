@@ -62,9 +62,9 @@ empBoxContent.classList = 'menu-float__content'
 
 if(menuId){
     empBoxContent.innerHTML = `
-    <div class="flex-row-ssb relative">
-        <div class="icon-close absolute-top-right" id="js-close-menu-empresas"><img alt="Close" src="${iconClose.src}"/></div>
+    <div class="grid grid-a-24px relative">
         <h1>Todas nuestras empresas forman parte de nuestra visión 360.</h1>
+        <div></div>
     </div>
     <div class="grid grid-3">
         <div class="flex-col-ss padding-1-5rem">
@@ -105,15 +105,13 @@ if(menuId){
     menuId.addEventListener('click', (e) => {
         e.preventDefault
         e.stopPropagation
-        console.log('he pinchado aquí')
         if(eToggle.classList.contains('js-toggle')){
             eToggle.appendChild(empBoxContainer)
             eToggle.classList.replace('js-toggle','js-toggle-active')
-            console.log('el menu empresas aparece')
+
         }else if(eToggle.classList.contains('js-toggle-active')){
             eToggle.removeChild(empBoxContainer)
             eToggle.classList.replace('js-toggle-active','js-toggle')
-            console.log('el menu se borra')
         }
     })
     document.addEventListener('click', (e) => {
@@ -122,15 +120,7 @@ if(menuId){
         if (!isClickInside && eToggle.classList.contains('js-toggle-active')) {
             eToggle.removeChild(empBoxContainer)
             eToggle.classList.replace('js-toggle-active','js-toggle')
-            console.log('el menu se borra')
         }
     })
 
-    const jsCloseMenuEmp = document.getElementById('js-close-menu-empresas')
-    if(jsCloseMenuEmp){
-        jsCloseMenuEmp.addEventListener('click', (e) => {
-            eToggle.removeChild(empBoxContainer)
-            console.log('me fui')
-        })
-    }
 }
