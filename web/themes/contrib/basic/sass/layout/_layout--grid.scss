@@ -162,17 +162,14 @@ body {
   background: rgba(#aaa, 0.2);
 }
 // Layout Helpers
-#header,
-#footer,
-.mission,
-.breadcrumb,
-.node {
-  clear: both;
-}
+//#header,
+//#footer,
+//.mission,
+//.breadcrumb,
+//.node {
+//  clear: both;
+//}
 
-#header{
-  padding: 32px 2rem;
-}
 @media only screen and (max-width: 720px){
   #header{
     padding: 0;

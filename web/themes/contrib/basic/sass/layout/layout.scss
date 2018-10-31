@@ -7,8 +7,27 @@
 // while also maintaining Drupals SMACSS structure.
 @import "layout--grid";
 @import "footer";
+
+
+.absolute-top-right{
+    position: absolute;
+    top: 14px;
+    right: 14px;
+    z-index: 300;
+}
+.icon-close{
+    width: 24px;
+    height: 24px;
+    img{
+        width: 100%;
+        opacity: .54;
+    }
+}
 .logo{
     height: 20px;
+}
+.relative{
+    position: relative;
 }
 
 .max-w-720{

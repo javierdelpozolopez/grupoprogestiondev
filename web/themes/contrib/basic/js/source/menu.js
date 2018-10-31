@@ -1,6 +1,6 @@
 // Menu Responsivo - activación del hamburger menu.
 
-const hamburgerMenu = document.getElementById('js-hamburger-menu')
+const   hamburgerMenu = document.getElementById('js-hamburger-menu')
 hamburgerMenu.classList = 'hamburger-menu'
 
 // Injecta el menu solo si el viewport es menor a 720px
@@ -21,6 +21,7 @@ if(hamburgerMenu){
     window.addEventListener('resize', e => {
         injectMenu(window.innerWidth)
     })
+    // al pinchar el menú contextual se muestra el menú
     hamburgerMenu.addEventListener('click', (e) =>{
         callMenu()
     })
@@ -36,7 +37,7 @@ mainMenuContent.classList = 'menu--main__content'
 mainMenuContent.innerHTML = `
 <ul>
 <li><a href="/inicio">Home</a></li>
-<li><a href="" id="js-main-menu-empresas">Empresas</a></li>
+<li class="relative js-toggle" id="js-toggle"><a id="js-main-menu-empresas" href="javascript:void(0)" role="button">Empresas</a></li>
 <li><a href="/servicios">Servicios</a></li>
 <li><a href="/nosotros">Nosotros</a></li>
 <li><a href="/blog">Blog</a></li>
@@ -56,20 +57,13 @@ const   menuId = document.getElementById('js-main-menu-empresas'),
         empBoxContainer = document.createElement('div'),
         empBoxContent = document.createElement('div')
 
-menuId.classList = 'menu-float__active'
-empBoxContainer.classList = 'menu-float__container'
+empBoxContainer.classList = 'sub-menu menu-float__container'
 empBoxContent.classList = 'menu-float__content'
 
-if(menuId.textContent = 'empresas'){
-    logoEnsti.src = imageUrl + 'svg/logo-ensti.svg';
-    logoAudisis.src = imageUrl + 'svg/logo-audisis.svg';
-    logoCrece.src = imageUrl + 'svg/logo-crece.svg';
-    logoDisecom.src = imageUrl + 'svg/logo-disecom.svg';
-    logoProgestion.src = imageUrl + 'svg/logo-progestion.svg';
-
+if(menuId){
     empBoxContent.innerHTML = `
-    <div class="flex-row-ssb">
-        <div class="icon-close" id="js-close-menu-empresas"></div>
+    <div class="flex-row-ssb relative">
+        <div class="icon-close absolute-top-right" id="js-close-menu-empresas"><img alt="Close" src="${iconClose.src}"/></div>
         <h1>Todas nuestras empresas forman parte de nuestra visión 360.</h1>
     </div>
     <div class="grid grid-3">
@@ -106,26 +100,37 @@ if(menuId.textContent = 'empresas'){
     </div>
     `
     empBoxContainer.appendChild(empBoxContent)
+    const eToggle = document.getElementById('js-toggle'); 
 
     menuId.addEventListener('click', (e) => {
         e.preventDefault
         e.stopPropagation
-        var validator = false
         console.log('he pinchado aquí')
-        if(validator == false){
-            menuId.appendChild(empBoxContainer)
-        var validator = true;
+        if(eToggle.classList.contains('js-toggle')){
+            eToggle.appendChild(empBoxContainer)
+            eToggle.classList.replace('js-toggle','js-toggle-active')
             console.log('el menu empresas aparece')
-        }else {
-            menuId.removeChild(empBoxContainer)
+        }else if(eToggle.classList.contains('js-toggle-active')){
+            eToggle.removeChild(empBoxContainer)
+            eToggle.classList.replace('js-toggle-active','js-toggle')
             console.log('el menu se borra')
-            var validator = false
+        }
+    })
+    document.addEventListener('click', (e) => {
+        var isClickInside = eToggle.contains(event.target);
+
+        if (!isClickInside && eToggle.classList.contains('js-toggle-active')) {
+            eToggle.removeChild(empBoxContainer)
+            eToggle.classList.replace('js-toggle-active','js-toggle')
+            console.log('el menu se borra')
         }
     })
 
-    empBoxContainer.addEventListener('mouseleave', (e) => {
-        e.preventDefault
-        setTimeout(menuId.removeChild(empBoxContainer),2000)
-        console.log('el menu empresas desaparece')
-    })
+    const jsCloseMenuEmp = document.getElementById('js-close-menu-empresas')
+    if(jsCloseMenuEmp){
+        jsCloseMenuEmp.addEventListener('click', (e) => {
+            eToggle.removeChild(empBoxContainer)
+            console.log('me fui')
+        })
+    }
 }

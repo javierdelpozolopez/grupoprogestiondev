@@ -1,2 +1,2 @@
-"use strict";console.log("pollito pollo");
+"use strict";console.log("scripts");
 //# sourceMappingURL=scripts.js.map

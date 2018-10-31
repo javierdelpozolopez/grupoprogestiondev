@@ -1,1 +1,1 @@
-console.log('pollito pollo')
+console.log('scripts')
