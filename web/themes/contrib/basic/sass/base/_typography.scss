@@ -21,32 +21,49 @@ h6 {
 }
 
 h1 {
-  font-size: 2.2em;
+  font-size: 6em;
   font-weight: 400;
 }
 
 h2 {
-  font-size: 1.8em;
-}
-
-h3 {
-  font-size: 1.4em;
-}
-
-h4 {
-  font-size: 1.2em;
+  font-size: 3.75em;
   font-weight: 400;
 }
 
+h3 {
+  font-size: 3em;
+  font-weight: 500;
+}
+
+h4 {
+  font-size: 2.125em;
+  font-weight: 500;
+}
+
 h5 {
-  font-size: 1.1em;
+  font-size: 1.5em;
+  font-weight: 500;
+}
+
+h6{
+  font-size: 1.25em;
+  font-weight: 600;
 }
 
 p {
+  font-size: 1em;
   margin: 0 0 $small-spacing;
+  font-weight: 500;
+  line-height: 1.75rem;
+}
+caption, pre{
+  font-size: 0,74em;
+  font-weight: 500;
 }
 
 a {
+  font-size: 0,75em;
+  text-transform: uppercase;
   color: $action-color;
   text-decoration: none;
   transition: color $base-duration $base-timing;
@@ -64,20 +81,6 @@ hr {
   border-right: 0;
   border-top: 0;
   margin: $base-spacing 0;
-}
-
-// Code
-pre, code, tt {
-  font: 1em "andale mono", "lucida console", monospace;
-  line-height: 1.5;
-}
-
-pre {
-  background-color: #efefef;
-  display: block;
-  padding: 5px;
-  margin: 5px 0;
-  border: 1px solid #aaaaaa;
 }
 
 // Abbreviation
