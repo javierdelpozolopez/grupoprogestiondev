@@ -13,7 +13,7 @@ contactInfoImgChile.src = imageUrl + 'bandera-chile.png'
 contactInfoImgPeru.src = imageUrl + 'bandera-peru.png'
 
 contactInfoContent.innerHTML = `
-<div class="contact-info__title"><h1 class="text__white">CONTÁCTANOS A:</h1></div>
+<div class="contact-info__title"><h4 class="text__white">CONTÁCTANOS A:</h4></div>
 
 <div class="contact-info__content-box grid contact-info-grid">
     <div class="contact-info__box icon-mail">
@@ -23,7 +23,7 @@ contactInfoContent.innerHTML = `
         <img class="contact-info__bandera" src="${contactInfoImgChile.src}" alt="Bandera Chile">
     </div>
     <div class="contact-info__box chile-correo">
-        <h4>comercial.chile@grupoprogestion.com</h4>
+        <h6>comercial.chile@grupoprogestion.com</h6>
     </div>
     <div class="contact-info__box chile-bandera">
         <img class="contact-info__bandera" src="${contactInfoImgChile.src}" alt="Bandera Chile">
@@ -33,20 +33,20 @@ contactInfoContent.innerHTML = `
     </div>
 
     <div class="contact-info__box chile-telefono">
-        <h4>Tel: (+56 2) 2433 6500</h4>
+        <h6>Tel: (+56 2) 2433 6500</h6>
     </div>
 
     <div class="contact-info__box peru-bandera">
         <img class="contact-info__bandera" src="${contactInfoImgPeru.src}" alt="Bandera Peru">
     </div>
     <div class="contact-info__box peru-correo">
-        <h4>comercial.peru@grupoprogestion.com</h4>
+        <h6>comercial.peru@grupoprogestion.com</h6>
     </div>
     <div class="contact-info__box peru-bandera">
         <img class="contact-info__bandera" src="${contactInfoImgPeru.src}" alt="Bandera Peru">
     </div>
     <div class="contact-info__box peru-telefono">
-        <h4>Tel: (+52) 55 5250 4056</h4>
+        <h6>Tel: (+52) 55 5250 4056</h6>
     </div>
 </div>
 `;

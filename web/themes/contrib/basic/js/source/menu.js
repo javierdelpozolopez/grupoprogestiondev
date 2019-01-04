@@ -6,7 +6,7 @@ hamburgerMenu.classList = 'hamburger-menu'
 // Injecta el menu solo si el viewport es menor a 720px
 const injectMenu = innerWidth => {
     if(innerWidth < 720){
-        console.log('Se inyectó el menú xoro')
+        console.log('Se inyectó el menú')
     }else {
         console.log('se borró')
     }
@@ -36,7 +36,7 @@ mainMenuContent.classList = 'menu--main__content'
 
 mainMenuContent.innerHTML = `
 <ul>
-<li><a href="/inicio">Home</a></li>
+<li><a href="/inicio">Inicio</a></li>
 <li class="relative js-toggle" id="js-toggle"><a id="js-main-menu-empresas" href="javascript:void(0)" role="button">Empresas</a></li>
 <li><a href="/servicios">Servicios</a></li>
 <li><a href="/nosotros">Nosotros</a></li>
@@ -63,38 +63,38 @@ empBoxContent.classList = 'menu-float__content'
 if(menuId){
     empBoxContent.innerHTML = `
     <div class="grid grid-a-24px relative">
-        <h1>Todas nuestras empresas forman parte de nuestra visión 360.</h1>
+        <h6>Todas nuestras empresas forman parte de nuestra visión 360.</h6>
         <div></div>
     </div>
     <div class="grid grid-3">
         <div class="flex-col-ss padding-1-5rem">
             <img class="logo" src="${logoProgestion.src}" alt="logo progestion">
-            <h4>Outsourcing, selección y gestión integral.</h4>
+            <h5>Outsourcing, selección y gestión integral.</h5>
             <a href="">Más información</a>
         </div>
         <div class="flex-col-ss padding-1-5rem">
             <img class="logo" src="${logoEnsti.src}" alt="logo ensti">
-            <h4>Servicios Transitorios y subcontratación.</h4>
+            <h5>Servicios Transitorios y subcontratación.</h5>
             <a href="">Más información</a>
         </div>
         <div class="flex-col-ss padding-1-5rem">
             <img class="logo" src="${logoAudisis.src}" alt="logo audisis">
-            <h4>Desarrollo de tecnología e inteligencia de negocios.</h4>
+            <h5>Desarrollo de tecnología e inteligencia de negocios.</h5>
             <a href="">Más información</a>
         </div>
         <div class="flex-col-ss padding-1-5rem">
             <img class="logo" src="${logoCrece.src}" alt="logo crece">
-            <h4>Capacitaciones por código Sence o privadas.</h4>
+            <h5>Capacitaciones por código Sence o privadas.</h5>
             <a href="">Más información</a>
         </div>
         <div class="flex-col-ss padding-1-5rem">
             <img class="logo" src="${logoDisecom.src}" alt="logo disecom">
-            <h4>Outsourcing, selección y gestión integral</h4>
+            <h5>Outsourcing, selección y gestión integral</h5>
             <a href="">Más información</a>
         </div>
         <div class="flex-col-ss padding-1-5rem">
             <img class="logo" src="" alt="logo facility services">
-            <h4>Compra reservas y cotizaciones</h4>
+            <h5>Compra reservas y cotizaciones</h5>
             <a href="">Más información</a>
         </div>
     </div>

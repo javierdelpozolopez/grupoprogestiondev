@@ -20,9 +20,9 @@
     <header>
       {{ title_prefix }}
       {% if not page and label %}
-        <h2{{ title_attributes.addClass(title_classes) }}>
+        <h5{{ title_attributes.addClass(title_classes) }}>
           <a href="{{ url }}" rel="bookmark">{{ label }}</a>
-        </h2>
+        </h5>
       {% endif %}
       {{ title_suffix }}
 

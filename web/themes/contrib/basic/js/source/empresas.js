@@ -44,14 +44,14 @@ if(empContainer){
     empGrid2col.className = 'grid grid-2 margin-top-10'
     
     empTitle.innerHTML = `
-    <h1>Conoce nuestras áreas especializadas</h1>
+    <h5>Conoce nuestras áreas especializadas</h5>
     `
     empGrid3col.innerHTML = `
         <div class="card flex-start-start">
             <div class="card__img card__img-bg" style="background-image:url('${empresas['ensti'].img.src}');"></div>
             <div class="card__info-area">
                 <img class="card__logo" src="${empresas['ensti'].logo.src}" alt="logo ensti">
-                <h3>${empresas['ensti'].desc}</h3>
+                <h6>${empresas['ensti'].desc}</h6>
             </div>
             <div class="card__actions">
                 <a class="btn btn__secondary" href="${empresas['ensti'].link}">Ver más</a>
@@ -62,7 +62,7 @@ if(empContainer){
             <div class="card__img card__img-bg" style="background-image:url('${empresas['audisis'].img.src}');"></div>
             <div class="card__info-area">
                 <img class="card__logo" src="${empresas['audisis'].logo.src}" alt="logo audisis">
-                <h3>${empresas['audisis'].desc}</h3>
+                <h6>${empresas['audisis'].desc}</h6>
             </div>
             <div class="card__actions">
             <a class="btn btn__secondary" href="${empresas['audisis'].link}">Ver más</a>
@@ -73,7 +73,7 @@ if(empContainer){
             <div class="card__img card__img-bg" style="background-image:url('${empresas['crece'].img.src}');"></div> 
             <div class="card__info-area">
                 <img class="card__logo" src="${empresas['crece'].logo.src}" alt="logo crece">
-                <h3>${empresas['crece'].desc}</h3>
+                <h6>${empresas['crece'].desc}</h6>
             </div>
             <div class="card__actions">
                 <a class="btn btn__secondary" href="${empresas['crece'].link}">Ver más</a>
@@ -86,7 +86,7 @@ if(empContainer){
      
         <div class="card__info-area">
             <img class="card__logo" src="${empresas['disecom'].logo.src}" alt="logo disecom">
-            <h3>${empresas['disecom'].desc}</h3>
+            <h6>${empresas['disecom'].desc}</h6>
         </div>
         <div class="card__actions">
             <a class="btn btn__secondary" href="${empresas['disecom'].link}">Ver más</a>
@@ -96,7 +96,7 @@ if(empContainer){
         <div class="card__img card__img-bg" style="background-image:url('${empresas['progestion'].img.src}');"></div>
         <div class="card__info-area">
             <img class="card__logo" src="${empresas['progestion'].logo.src}" alt="logo progestion">
-            <h3>${empresas['progestion'].desc}</h3>
+            <h6>${empresas['progestion'].desc}</h6>
         </div>
         <div class="card__actions">
             <a class="btn btn__secondary" href="${empresas['progestion'].link}">Ver más</a>

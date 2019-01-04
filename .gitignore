@@ -20,3 +20,11 @@
 
 # Ignore .env files as they are personal
 /.env
+
+/web/themes/contrib/basic/css/*
+/web/themes/contrib/basic/*.scssc
+/web/themes/contrib/basic/*.sassc
+/web/themes/contrib/basic/.sass-cache
+/web/themes/contrib/basic/*.map
+/web/themes/contrib/basic/node_modules
+/web/themes/contrib/basic/.DS_Store

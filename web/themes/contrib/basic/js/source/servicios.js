@@ -25,7 +25,7 @@ if(menuServicesId){
         <img class="icon-big" src="${serviceHeroLogo.src}" alt="logo 360">
         </div>
         <div class="flex-col-cc">
-            <h1 class="color-primary">Entregamos soluciones 360° en Marketing, Trade, Logística, Outsourcing, Tecnología y Capacitaciones.</h1>
+            <h3 class="color-primary">Entregamos soluciones 360° en Marketing, Trade, Logística, Outsourcing, Tecnología y Capacitaciones.</h3>
             <p>Ofrecemos soluciones a medida de nuestros clientes, nos hacemos responsables de un proceso completo, o de una parte de éste, siempre con excelencia e innovación.</p>
         </div>
     </div>
@@ -103,7 +103,7 @@ if(menuServicesId){
                     <a class="btn btn__secondary" href="${description.url}">Ir al sitio</a>
                 </div>
                 <img class="img-100w border-radius-8" src="${description.img}" alt="img">
-                <h1 class="padding-1-0-1-0 color-primary">${description.title}</h1>
+                <h3 class="padding-1-0-1-0 color-primary">${description.title}</h3>
                 <ul class="list-decorate">${description.services}</ul>
             </div>
         `

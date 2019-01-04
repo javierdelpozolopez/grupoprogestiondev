@@ -117,7 +117,15 @@
         }
     }
 } 
- 
+
+.grid-item-header{
+    grid-column: 1 / span last-line;
+    grid-row: 1 / 2;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
 .container-bg__title{
     background-image: url('../../images/source/bg-title.jpg');
     background-position: center;
