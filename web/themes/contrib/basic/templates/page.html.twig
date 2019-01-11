@@ -7,6 +7,11 @@
 ) }}>
 
   <!-- ______________________ HEADER _______________________ -->
+  {% if page.pop_up %}
+      <div class="absolute pop_up-container">
+          {{ page.pop_up }}
+      </div>
+  {% endif %}
 
   {% if page.header %}
     <header id="header">

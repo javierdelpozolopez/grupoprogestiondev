@@ -55,62 +55,71 @@ if(mainMenuContainerId){
 // Float Menu para las Empresas.
 const   menuId = document.getElementById('js-main-menu-empresas'),
         empBoxContainer = document.createElement('div'),
-        empBoxContent = document.createElement('div')
+        empBoxContent = document.createElement('div'),
+        empBoxEffect = document.createElement('div')
 
-empBoxContainer.classList = 'sub-menu menu-float__container'
+empBoxContainer.classList = 'sub-menu menu-float__container flex-col-cc'
 empBoxContent.classList = 'menu-float__content'
+empBoxEffect.classList = 'menu-float__effect'
+
+if(menuId){
+    empBoxEffect.innerHTML = `<div class="menu-float__effect blur" id="js-blur-effect"></div>`
+}
 
 if(menuId){
     empBoxContent.innerHTML = `
     <div class="grid grid-a-24px relative">
-        <h6>Todas nuestras empresas forman parte de nuestra visión 360.</h6>
+        <h3>Todas nuestras empresas forman parte de nuestra visión 360.</h3>
         <div></div>
     </div>
     <div class="grid grid-3">
-        <div class="flex-col-ss padding-1-5rem">
-            <img class="logo" src="${logoProgestion.src}" alt="logo progestion">
-            <h5>Outsourcing, selección y gestión integral.</h5>
-            <a href="">Más información</a>
+        <div class="flex-col-ss padding-1-5rem sub-menu-box">
+            <img src="${logoProgestion.src}" alt="logo progestion">
+            <p>Outsourcing, selección y gestión integral.</p>
+            <a class="text__button" href="">Más información</a>
         </div>
-        <div class="flex-col-ss padding-1-5rem">
-            <img class="logo" src="${logoEnsti.src}" alt="logo ensti">
-            <h5>Servicios Transitorios y subcontratación.</h5>
-            <a href="">Más información</a>
+        <div class="flex-col-ss padding-1-5rem sub-menu-box">
+            <img src="${logoEnsti.src}" alt="logo ensti">
+            <p>Servicios Transitorios y subcontratación.</p>
+            <a class="text__button" href="">Más información</a>
         </div>
-        <div class="flex-col-ss padding-1-5rem">
-            <img class="logo" src="${logoAudisis.src}" alt="logo audisis">
-            <h5>Desarrollo de tecnología e inteligencia de negocios.</h5>
-            <a href="">Más información</a>
+        <div class="flex-col-ss padding-1-5rem sub-menu-box">
+            <img src="${logoAudisis.src}" alt="logo audisis">
+            <p>Desarrollo de tecnología e inteligencia de negocios.</p>
+            <a class="text__button" href="">Más información</a>
         </div>
-        <div class="flex-col-ss padding-1-5rem">
-            <img class="logo" src="${logoCrece.src}" alt="logo crece">
-            <h5>Capacitaciones por código Sence o privadas.</h5>
-            <a href="">Más información</a>
+        <div class="flex-col-ss padding-1-5rem sub-menu-box">
+            <img src="${logoCrece.src}" alt="logo crece">
+            <p>Capacitaciones por código Sence o privadas.</p>
+            <a class="text__button" href="">Más información</a>
         </div>
-        <div class="flex-col-ss padding-1-5rem">
-            <img class="logo" src="${logoDisecom.src}" alt="logo disecom">
-            <h5>Outsourcing, selección y gestión integral</h5>
-            <a href="">Más información</a>
+        <div class="flex-col-ss padding-1-5rem sub-menu-box">
+            <img src="${logoDisecom.src}" alt="logo disecom">
+            <p>Outsourcing, selección y gestión integral</p>
+            <a class="text__button" href="">Más información</a>
         </div>
-        <div class="flex-col-ss padding-1-5rem">
-            <img class="logo" src="" alt="logo facility services">
-            <h5>Compra reservas y cotizaciones</h5>
-            <a href="">Más información</a>
+        <div class="flex-col-ss padding-1-5rem sub-menu-box">
+            <img src="" alt="logo facility services">
+            <p>Compra reservas y cotizaciones</p>
+            <a class="text__button" href="">Más información</a>
         </div>
     </div>
     `
     empBoxContainer.appendChild(empBoxContent)
-    const eToggle = document.getElementById('js-toggle'); 
+    empBoxContainer.appendChild(empBoxEffect)
+    const eToggle = document.getElementById('js-toggle');
+    const popUp = document.getElementById('js-pop-up');
+
 
     menuId.addEventListener('click', (e) => {
         e.preventDefault
         e.stopPropagation
         if(eToggle.classList.contains('js-toggle')){
-            eToggle.appendChild(empBoxContainer)
+            popUp.appendChild(empBoxContainer)
             eToggle.classList.replace('js-toggle','js-toggle-active')
 
         }else if(eToggle.classList.contains('js-toggle-active')){
-            eToggle.removeChild(empBoxContainer)
+            popUp.removeChild(empBoxContainer)
             eToggle.classList.replace('js-toggle-active','js-toggle')
         }
     })
@@ -118,7 +127,7 @@ if(menuId){
         var isClickInside = eToggle.contains(event.target);
 
         if (!isClickInside && eToggle.classList.contains('js-toggle-active')) {
-            eToggle.removeChild(empBoxContainer)
+            popUp.removeChild(empBoxContainer)
             eToggle.classList.replace('js-toggle-active','js-toggle')
         }
     })

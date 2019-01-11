@@ -11,7 +11,7 @@ const   imgEnsti = new Image(),
         logoProgestion = new Image(),
 
         iconClose = new Image(),
-        imageUrl = './themes/contrib/basic/images/source/';
+        imageUrl = '../themes/contrib/basic/images/source/';
 
 imgEnsti.src = imageUrl + 'emp-ensti.jpg';
 imgAudisis.src = imageUrl + 'emp-audisis.jpg';

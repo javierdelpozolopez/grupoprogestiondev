@@ -80,10 +80,10 @@ gulp.task('watch', function() {
 			'js/build/**/*.js',
 			'*.theme'
 		],
-		proxy: argv.proxy
+		proxy: "localhost:8088"
 	});
 	gulp.watch(paths.sassSrc, ['sass']);
-	gulp.watch(paths.jsSrc, ['js']);
+	gulp.watch(paths.jsSrc, ['js']).on('change', bs.reload);
 });
  
 // Default task

@@ -11,6 +11,7 @@ libraries:
 
 
 regions:
+  pop_up : 'pop up'
   header: Header
   main_menu: 'main_menu'
   help: Help

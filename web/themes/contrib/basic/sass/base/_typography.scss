@@ -62,19 +62,6 @@ caption, pre{
   font-weight: 500;
 }
 
-a {
-  font-size: 0,75em;
-  color: $action-color;
-  text-decoration: none;
-  transition: color $base-duration $base-timing;
-
-  &:active,
-  &:focus,
-  &:hover {
-    color: shade($action-color, 25%);
-  }
-}
-
 hr {
   border-bottom: $base-border;
   border-left: 0;

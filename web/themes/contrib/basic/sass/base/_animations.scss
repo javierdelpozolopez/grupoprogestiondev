@@ -1,0 +1,4 @@
+@keyframes showUp {
+    from {opacity: 0; filter:blur(32px); top: -40px;}
+    to {opacity: 1; filter:blur(0px); top: 0px;}
+}

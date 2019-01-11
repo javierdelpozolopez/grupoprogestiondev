@@ -19,16 +19,17 @@
             align-items: center;
             justify-content: center;
             flex-grow: 1;
-                a{
+                > a {
                     width: 100%;
+                    text-decoration: none;
                     text-align: center;
                     padding: 1.5rem;
                     color: white;
                     text-transform: capitalize;
-                    &:hover{
+                }
+                > a:hover{
                         background-color: white;
                         color: $primary-color;
-                    }
                 }
             }
         }
@@ -39,14 +40,43 @@
     display: none;
 }
 .menu-float__container{
-    position: absolute;
-    top: 105%;
+    position: fixed;
+    top: 0;
     left: 0;
-    width: 900px;
-    background-color: white;
-    border-radius: 4px;
+    width: 100vw;
+    height: 100vh;
+    background-color: rgba(30,30,30,0.5);
     z-index: 10000;
-    padding: 1rem;
+}
+.menu-float__content{
+    background-color: $light-gray;
+    padding: 2rem;
+    width: 95%;
+    height: 95%;
+    border-radius: 4px;
+    z-index: 100;
+    position: relative;
+    animation-name: showUp;
+    animation-duration: 1s;
+}
+.sub-menu-box{
+    background-color: white;
+    img[alt*="logo"]{
+        height: 40px;
+        padding-bottom: 1rem;
+    }
+}
+
+.blur{
+    filter: blur(3px);
+}
+
+.menu-float__effect{
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100vw;
+    height: 100vh;
 }
 @media only screen and (max-width: 720px){
     .hamburger-menu{
@@ -86,5 +116,17 @@
     }
     .main-menu__active{
         left: 0%;
+    }
+}
+
+.text__button{
+    font-size: 10px;
+    text-transform: uppercase;
+    text-decoration: none;
+    padding: 1em 1.5em;
+    border-radius: 4px;
+    color: $primary-color;
+    &:hover{
+        background-color: rgba(30,30,30,0.1)
     }
 }
