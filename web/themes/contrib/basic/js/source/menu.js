@@ -21,7 +21,7 @@ if(hamburgerMenu){
     window.addEventListener('resize', e => {
         injectMenu(window.innerWidth)
     })
-    // al pinchar el menú contextual se muestra el menú
+    // al pinchar el menú consecondaryual se muestra el menú
     hamburgerMenu.addEventListener('click', (e) =>{
         callMenu()
     })
@@ -68,40 +68,40 @@ if(menuId){
 
 if(menuId){
     empBoxContent.innerHTML = `
-    <div class="grid grid-a-24px relative">
+    <div class="grid grid-auto-48px relative">
         <h3>Todas nuestras empresas forman parte de nuestra visión 360.</h3>
-        <div></div>
+        <div id="js-close-popup" class="flex-col-ss"><img src="${svgClose.src}" alt="cerrar"></div>
     </div>
     <div class="grid grid-3">
         <div class="flex-col-ss padding-1-5rem sub-menu-box">
             <img src="${logoProgestion.src}" alt="logo progestion">
             <p>Outsourcing, selección y gestión integral.</p>
-            <a class="text__button" href="">Más información</a>
+            <a class="btn btn--outlined" href="${empresas['progestion'].link}">conocer más</a>
         </div>
         <div class="flex-col-ss padding-1-5rem sub-menu-box">
             <img src="${logoEnsti.src}" alt="logo ensti">
             <p>Servicios Transitorios y subcontratación.</p>
-            <a class="text__button" href="">Más información</a>
+            <a class="btn btn--outlined" href="${empresas['ensti'].link}">Más información</a>
         </div>
         <div class="flex-col-ss padding-1-5rem sub-menu-box">
             <img src="${logoAudisis.src}" alt="logo audisis">
             <p>Desarrollo de tecnología e inteligencia de negocios.</p>
-            <a class="text__button" href="">Más información</a>
+            <a class="btn btn--outlined" href="${empresas['audisis'].link}">Más información</a>
         </div>
         <div class="flex-col-ss padding-1-5rem sub-menu-box">
             <img src="${logoCrece.src}" alt="logo crece">
             <p>Capacitaciones por código Sence o privadas.</p>
-            <a class="text__button" href="">Más información</a>
+            <a class="btn btn--outlined" href="${empresas['crece'].link}">Más información</a>
         </div>
         <div class="flex-col-ss padding-1-5rem sub-menu-box">
             <img src="${logoDisecom.src}" alt="logo disecom">
             <p>Outsourcing, selección y gestión integral</p>
-            <a class="text__button" href="">Más información</a>
+            <a class="btn btn--outlined" href="${empresas['disecom'].link}">Más información</a>
         </div>
         <div class="flex-col-ss padding-1-5rem sub-menu-box">
             <img src="" alt="logo facility services">
             <p>Compra reservas y cotizaciones</p>
-            <a class="text__button" href="">Más información</a>
+            <a class="btn btn--outlined" href="">Más información</a>
         </div>
     </div>
     `
@@ -109,7 +109,7 @@ if(menuId){
     empBoxContainer.appendChild(empBoxEffect)
     const eToggle = document.getElementById('js-toggle');
     const popUp = document.getElementById('js-pop-up');
-
+    
 
     menuId.addEventListener('click', (e) => {
         e.preventDefault
@@ -122,14 +122,15 @@ if(menuId){
             popUp.removeChild(empBoxContainer)
             eToggle.classList.replace('js-toggle-active','js-toggle')
         }
-    })
-    document.addEventListener('click', (e) => {
-        var isClickInside = eToggle.contains(event.target);
+        const closePopUp = document.getElementById('js-close-popup');
 
-        if (!isClickInside && eToggle.classList.contains('js-toggle-active')) {
-            popUp.removeChild(empBoxContainer)
-            eToggle.classList.replace('js-toggle-active','js-toggle')
-        }
+        closePopUp.addEventListener('click', (e) => {
+            var isClickInside = eToggle.contains(event.target);
+    
+            if (!isClickInside && eToggle.classList.contains('js-toggle-active')) {
+                popUp.removeChild(empBoxContainer)
+                eToggle.classList.replace('js-toggle-active','js-toggle')
+            }
+        })
     })
-
 }

@@ -83,7 +83,7 @@ gulp.task('watch', function() {
 		proxy: "localhost:8088"
 	});
 	gulp.watch(paths.sassSrc, ['sass']);
-	gulp.watch(paths.jsSrc, ['js']).on('change', bs.reload);
+	gulp.watch(paths.jsSrc, ['js']);
 });
  
 // Default task

@@ -20,6 +20,7 @@ regions:
   highlighted: Highlighted
   slider: 'slider'
   page_title: 'page Title'
+  page_main_empresa: 'Page Main Empresa'
   difrent_bg_content: Difrent bg content
   two_grid_content: 'two-grid-content'
   content: Content

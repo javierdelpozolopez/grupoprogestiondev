@@ -1,40 +1,44 @@
-// Button styles
-$_button-background-color: $action-color;
-$_button-background-color-hover: shade($action-color, 20%);
 
-#{$all-buttons} {
-  appearance: none;
-  background-color: $_button-background-color;
-  border: 0;
-  border-radius: $base-border-radius;
-  color: contrast-switch($_button-background-color);
-  cursor: pointer;
-  display: inline-block;
-  font-family: $base-font-family;
-  font-size: $base-font-size;
-  -webkit-font-smoothing: antialiased;
-  font-weight: 600;
-  line-height: 1;
-  padding: $small-spacing $base-spacing;
-  text-align: center;
+.btn{
+  padding: 8px 16px;
+  border-radius: 4px;
   text-decoration: none;
-  transition: background-color $base-duration $base-timing;
-  user-select: none;
-  vertical-align: middle;
-  white-space: nowrap;
-
-  &:hover,
-  &:focus {
-    background-color: $_button-background-color-hover;
-    color: contrast-switch($_button-background-color-hover);
+  font-size: 0.9rem;
+  letter-spacing: 0.25;
+  text-transform: uppercase;
+  text-align: center;
+  font-weight: 500;
+  &--unelevated{
+    background-color: $primary-color;
+    color: white;
   }
+  &--outlined{
+    border: 1px solid $medium-gray;
+    color: $primary-color;
+  }
+}
 
-  &:disabled {
-    cursor: not-allowed;
-    opacity: 0.5;
+.btn{
+  &__secondary{
+      border: 1px solid $primary-color;
+      padding: .5rem 1rem;
+      border-radius: 4px;
+  }
+}
 
-    &:hover {
-      background-color: $_button-background-color;
-    }
+.btn__deploy{
+  position: relative;
+  background-color: $primary-color;
+  color: white;
+  &:before{
+      content: '';
+      width: 24px;
+      height: 24px;
+      border-radius: 4px;
+      background-color: $primary-color;
+      position: absolute;
+      top: calc(100% - 12px);
+      left: 25%;
+      transform: rotate(45deg); 
   }
 }

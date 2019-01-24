@@ -9,8 +9,10 @@ const   imgEnsti = new Image(),
         logoCrece = new Image(),
         logoDisecom = new Image(),
         logoProgestion = new Image(),
+        logoProgestionWhite = new Image(),
 
-        iconClose = new Image(),
+        svgClose = new Image(),
+
         imageUrl = '../themes/contrib/basic/images/source/';
 
 imgEnsti.src = imageUrl + 'emp-ensti.jpg';
@@ -24,5 +26,40 @@ logoAudisis.src = imageUrl + 'svg/logo-audisis.svg';
 logoCrece.src = imageUrl + 'svg/logo-crece.svg';
 logoDisecom.src = imageUrl + 'svg/logo-disecom.svg';
 logoProgestion.src = imageUrl + 'svg/logo-progestion.svg';
+logoProgestionWhite.src = imageUrl + 'svg/logo-progestion-white.svg';
 
-iconClose.src = imageUrl + 'svg/icon-close.svg';
+svgClose.src = imageUrl + 'svg/icon-close.svg';
+
+const empresas = {
+    'ensti': {
+        img: imgEnsti,
+        logo: logoEnsti,
+        desc: 'Reclutamiento, selección y contratación de personal.',
+        link: '/empresas/ensti'
+    },
+    'audisis': {
+        img: imgAudisis,
+        logo: logoAudisis,
+        desc: 'Desarrollo de tecnología e inteligencia de negocios.',
+        link: '/empresas/audisis'
+    },
+    'crece': {
+        img: imgCrece,
+        logo: logoCrece,
+        desc: 'Capacitaciones por código Sence o privadas.',
+        link: '/empresas/crece'
+    },
+    'disecom': {
+        img: imgDisecom,
+        logo: logoDisecom,
+        desc: 'Diseño, trade, marketing y producción',
+        link: '/empresas/disecom'
+    },
+    'progestion':{
+        img: imgProgestion,
+        logo: logoProgestion,
+        logoWhite: logoProgestionWhite,
+        desc: 'Outsourcing y gestión integral',
+        link: '/empresas/progestion'
+    }
+}

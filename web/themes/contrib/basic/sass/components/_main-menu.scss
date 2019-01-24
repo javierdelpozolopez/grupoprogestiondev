@@ -57,7 +57,7 @@
     z-index: 100;
     position: relative;
     animation-name: showUp;
-    animation-duration: 1s;
+    animation-duration: .6s;
 }
 .sub-menu-box{
     background-color: white;
@@ -116,17 +116,5 @@
     }
     .main-menu__active{
         left: 0%;
-    }
-}
-
-.text__button{
-    font-size: 10px;
-    text-transform: uppercase;
-    text-decoration: none;
-    padding: 1em 1.5em;
-    border-radius: 4px;
-    color: $primary-color;
-    &:hover{
-        background-color: rgba(30,30,30,0.1)
     }
 }

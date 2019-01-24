@@ -1,40 +1,7 @@
 const empContainer = document.getElementById('js-emp')
 
 if(empContainer){
-    
-    const empresas = {
-        'ensti': {
-            img: imgEnsti,
-            logo: logoEnsti,
-            desc: 'Reclutamiento, selección y contratación de personal.',
-            link: '/empresas/ensti'
-        },
-        'audisis': {
-            img: imgAudisis,
-            logo: logoAudisis,
-            desc: 'Desarrollo de tecnología e inteligencia de negocios.',
-            link: '/empresas/audisis'
-        },
-        'crece': {
-            img: imgCrece,
-            logo: logoCrece,
-            desc: 'Capacitaciones por código Sence o privadas.',
-            link: '/empresas/crece'
-        },
-        'disecom': {
-            img: imgDisecom,
-            logo: logoDisecom,
-            desc: 'Diseño, trade, marketing y producción',
-            link: '/empresas/disecom'
-        },
-        'progestion':{
-            img: imgProgestion,
-            logo: logoProgestion,
-            desc: 'Outsourcing y gestión integral',
-            link: '/empresas/progestion'
-        }
-    }
-    
+
     const empTitle = document.createElement('div')
     const empGrid3col = document.createElement('div')
     const empGrid2col = document.createElement('div')
@@ -54,7 +21,7 @@ if(empContainer){
                 <h6>${empresas['ensti'].desc}</h6>
             </div>
             <div class="card__actions">
-                <a class="btn btn__secondary" href="${empresas['ensti'].link}">Ver más</a>
+                <a class="btn btn--outlined" href="${empresas['ensti'].link}">Ver más</a>
             </div>
         </div>
     
@@ -65,7 +32,7 @@ if(empContainer){
                 <h6>${empresas['audisis'].desc}</h6>
             </div>
             <div class="card__actions">
-            <a class="btn btn__secondary" href="${empresas['audisis'].link}">Ver más</a>
+            <a class="btn btn--outlined" href="${empresas['audisis'].link}">Ver más</a>
             </div>
         </div>
     
@@ -76,7 +43,7 @@ if(empContainer){
                 <h6>${empresas['crece'].desc}</h6>
             </div>
             <div class="card__actions">
-                <a class="btn btn__secondary" href="${empresas['crece'].link}">Ver más</a>
+                <a class="btn btn--outlined" href="${empresas['crece'].link}">Ver más</a>
             </div>
         </div>
     `
@@ -89,7 +56,7 @@ if(empContainer){
             <h6>${empresas['disecom'].desc}</h6>
         </div>
         <div class="card__actions">
-            <a class="btn btn__secondary" href="${empresas['disecom'].link}">Ver más</a>
+            <a class="btn btn--outlined" href="${empresas['disecom'].link}">Ver más</a>
         </div>
     </div>
     <div class="card flex-start-start">
@@ -99,7 +66,7 @@ if(empContainer){
             <h6>${empresas['progestion'].desc}</h6>
         </div>
         <div class="card__actions">
-            <a class="btn btn__secondary" href="${empresas['progestion'].link}">Ver más</a>
+            <a class="btn btn--outlined" href="${empresas['progestion'].link}">Ver más</a>
         </div>
     </div>
     `

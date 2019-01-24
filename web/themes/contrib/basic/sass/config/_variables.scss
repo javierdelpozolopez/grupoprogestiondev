@@ -9,11 +9,11 @@
 
 // Margin/Padding
 $margin: $gutter;
-$padding: $gutter;
+$padding: 2rem;
 
 // Typography
-$base-font-family: $font-stack-helvetica;
-$heading-font-family: $base-font-family;
+$base-font-family: $font-size;
+$heading-font-family: $font-size;
 
 // Font Sizes
 $base-font-size: $font-size;
@@ -64,3 +64,5 @@ $focus-outline-offset: 2px;
 // Animations
 $base-duration: 150ms;
 $base-timing: ease;
+
+
