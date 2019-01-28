@@ -18,3 +18,31 @@ dt {
 dd {
   margin: 0;
 }
+
+li{
+  list-style: none;
+}
+
+.sidebar_second{
+  @include flex(column,flex-start,flex-start);
+  border-radius: 4px;
+  padding: .5rem;
+  border: 1px solid $medium-gray;
+  li {
+   width: 100%;
+   list-style: none;
+   border-bottom: 1px solid $light-gray;
+   padding: 1em;
+   cursor: pointer;
+   p{
+     padding: 0;
+     margin: 0;
+   }
+   &:hover{
+     background-color: $light-gray;
+   }
+   &:active{
+     background-color: $medium-gray;
+   }
+ }
+}

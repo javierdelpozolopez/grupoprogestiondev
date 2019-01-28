@@ -27,18 +27,5 @@
 }
 
 .btn__deploy{
-  position: relative;
-  background-color: $primary-color;
-  color: white;
-  &:before{
-      content: '';
-      width: 24px;
-      height: 24px;
-      border-radius: 4px;
-      background-color: $primary-color;
-      position: absolute;
-      top: calc(100% - 12px);
-      left: 25%;
-      transform: rotate(45deg); 
-  }
+  border-left: 3px solid $primary-color;
 }

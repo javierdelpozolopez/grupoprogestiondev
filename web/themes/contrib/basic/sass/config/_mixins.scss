@@ -9,3 +9,18 @@
 // For complete documentation:
 // Sass mixins: http://sass-lang.com/docs/yardoc/file.SASS_REFERENCE.html#mixins
 // Bourbon mixins: http://bourbon.io/docs/
+
+
+@mixin flex($flex-direction,$align-items,$justify-content){
+    display: flex;
+    flex-direction: $flex-direction;
+    align-items: $align-items;
+    justify-content: $justify-content;
+}
+
+@mixin grid($grid-template-columns, $grid-template-rows, $grid-gap){
+    display: grid;
+    grid-template-columns: $grid-template-columns;
+    grid-template-rows: $grid-template-rows;
+    grid-gap: $grid-gap;
+}

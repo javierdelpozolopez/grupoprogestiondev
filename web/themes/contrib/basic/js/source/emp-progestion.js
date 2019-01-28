@@ -13,7 +13,7 @@ if(eProgestionHeroId){
             <div class="hero__box flex-col-cc">
                 <object class="hero__logo" data="${empresas['progestion'].logoWhite.src}" type="image/svg+xml"></object>
                 <h4>Líderes en gestión integral</h4>
-                <p>Empresa Orientada a ser parte estratégica de cada cliente como un socio comercial en cada recurso contratado, profesionalizando sus roles y resultados todos enfocados en los KPI del cliente</p>
+                <p>Empresa orientada a ser parte estratégica de cada cliente como un socio comercial en cada recurso contratado, profesionalizando sus roles y resultados enfocados en los KPI's</p>
             </div>
         </div>
     </div>
@@ -24,17 +24,16 @@ if(eProgestionHeroId){
 if(eProgestionMenuId){
     eProgestionMenuContent.classList = "sidebar_second"
     eProgestionMenuContent.innerHTML = `
-    <div class="flex-col-ss">
+        <pre>SERVICIOS</pre>
         <li onclick="selectTab(this)" class="js-capture-id" id="service1"><p>Outsourcing</p></li>
         <li onclick="selectTab(this)" class="js-capture-id" id="service2"><p>Área Distribución</p></li>
         <li onclick="selectTab(this)" class="js-capture-id" id="service3"><p>Área salud</p></li>
-    </div>
     `
     eProgestionMenuId.appendChild(eProgestionMenuContent)
 
 const service1Info = `
     <div class="flex-col-ss">
-        <h3>Nuestro Principal foco, es apoyar con la mayor eficiencia en diferente servicios a nuestros cliente</h3>
+        <h3>Nuestro Principal foco, es apoyar con la mayor eficiencia en diferentes servicios a nuestros cliente</h3>
         <img class="width-100" src="${empresas['progestion'].img.src}" alt="imagen progestion">
         <p>Reposición, KAM -KAS, BI, vendedores, supervisores, jefaturas y mucho más.</p>
  
