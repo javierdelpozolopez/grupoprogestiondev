@@ -7,15 +7,16 @@ const   eDisId = document.getElementById('js-emp-disecom'),
 
 if(eDisHeroId){
     const eDisHeroContent = document.createElement('div')
-    const imageUrl = './../themes/contrib/basic/images/source/'
-    const logo = new Image()
-    logo.src = imageUrl + 'svg/logo-disecom.svg'
 
     eDisHeroContent.innerHTML = `
-    <div class="flex-column-cc text-align-center padding-3-0">
-        <img class="icon-bigger" src="${logo.src}" alt="Logo Disecom">
-        <h1>Marketing, Trade y Logística a tu servicio.</h1>
+    <div class="hero__container" style="background-image: url(${empresas['disecom'].img.src});">
+    <div class="padding-3-2 hero__content hero__content--disecom">
+        <div data-aos="fade-in" class="flex-column-cc text-align-center padding-3-0 hero__box">
+        <object class="hero__logo hero__logo--medium" data="${empresas['disecom'].logoWhite.src}" type="image/svg+xml"></object>
+        <h5>Marketing, Trade y Logística a tu servicio.</h5>
         <p>¡Lleva tu estrategia comercial al PDV!</p>
+        </div>
+    </div>
     </div>
     `
     eDisHeroId.appendChild(eDisHeroContent)
@@ -55,15 +56,15 @@ const tradeMarketingInfo = `
     <div class="grid-2-no-gap">
         <div class="box-bg-img" style="background-image:url('${eDisImgTrade.src}');"></div>
         <div class="flex-col-sc padding-3-2">
-            <h1>Implementación y Control de PDV</h1>
-            <h4>junto con auditorías y Equipos Swatt de posición, realizamos visitas según ruta logrando eficiencia en tiempo-recurso y cobertura.</h4>
+            <h3>Implementación y Control de PDV</h3>
+            <h5>junto con auditorías y Equipos Swatt de posición, realizamos visitas según ruta logrando eficiencia en tiempo-recurso y cobertura.</h5>
         </div>
     </div>
 
     <div class="grid-2-no-gap">
         <div class="flex-col-sc padding-3-2">
-            <h1>Equipos Trade Marketing exclusivos y/o por evento.</h1>
-            <h4>Llevamos acabo tu campaña con equipos capacitados</h4>
+            <h3>Equipos Trade Marketing exclusivos y/o por evento.</h3>
+            <h5>Llevamos acabo tu campaña con equipos capacitados</h5>
         </div>
         <div class="box-bg-img" style="background-image:url('${eDisImgTrade.src}');"></div>
     </div>
@@ -71,15 +72,15 @@ const tradeMarketingInfo = `
     <div class="grid-2-no-gap">
         <div class="box-bg-img" style="background-image:url('${eDisImgTrade.src}');"></div>
         <div class="flex-col-sc padding-3-2">
-            <h1>Levantamiento para generación de BBDD y estadística.</h1>
-            <h4>Levantamiento para generación de BBDD y estadística y Plan estratégico de visitas por zonas (Barrido).</h4>
+            <h3>Levantamiento para generación de BBDD y estadística.</h3>
+            <h5>Levantamiento para generación de BBDD y estadística y Plan estratégico de visitas por zonas (Barrido).</h5>
         </div>
     </div>
 
     <div class="grid-2-no-gap">
         <div class="flex-col-sc padding-3-2">
-            <h1>Focus Group e Inspector incógnito</h1>
-            <h4>Descubre lo que realmente pasa en el PDV</h4>
+            <h3>Focus Group e Inspector incógnito</h3>
+            <h5>Descubre lo que realmente pasa en el PDV</h5>
         </div>
         <div class="box-bg-img" style="background-image:url('${eDisImgTrade.src}');"></div>
     </div>
@@ -89,28 +90,28 @@ const supplyChainManagementInfo = `
     <div class="grid-2-no-gap">
         <div class="box-bg-img" style="background-image:url('${eDisImgTrade.src}');"></div>
         <div class="flex-col-sc padding-3-2">
-            <h1>Almacenamiento</h1>
-            <h4>Nuestro Centro de Distribución se encuentra dentro del Centro Logístico de Puerto Madero (Bodegas San Francisco). El punto ideal para atender redes de distribución con acceso directo a la Ruta 68, Alameda, Américo Vespucio y Costanera Norte. Cuenta con 4.600 mt² con Almacenamiento tipo Rack y a Piso para cargas sobredimensionadas.</h4>
+            <h3>Almacenamiento</h3>
+            <h5>Nuestro Centro de Distribución se encuentra dentro del Centro Logístico de Puerto Madero (Bodegas San Francisco). El punto ideal para atender redes de distribución con acceso directo a la Ruta 68, Alameda, Américo Vespucio y Costanera Norte. Cuenta con 4.600 mt² con Almacenamiento tipo Rack y a Piso para cargas sobredimensionadas.</h5>
         </div>
     </div>
     <div class="grid-2-no-gap">
         <div class="flex-col-sc padding-3-2">
-            <h1>Logística de despacho.</h1>
-            <h4>Cuenta con amplia diversidad de para su Logística de despachos, de acuerdo a tus necesidades (Motos, Camionetas, Camiones, etc.). A nivel nacional tenemos alianza con nuestra Empresa Interna TRANSPRO, como también con importantes Courier a nivel nacional.</h4>
+            <h3>Logística de despacho.</h3>
+            <h5>Cuenta con amplia diversidad de para su Logística de despachos, de acuerdo a tus necesidades (Motos, Camionetas, Camiones, etc.). A nivel nacional tenemos alianza con nuestra Empresa Interna TRANSPRO, como también con importantes Courier a nivel nacional.</h5>
         </div>
         <div class="box-bg-img" style="background-image:url('${eDisImgTrade.src}');"></div>
     </div>
     <div class="grid-2-no-gap">
         <div class="box-bg-img" style="background-image:url('${eDisImgTrade.src}');"></div>
         <div class="flex-col-sc padding-3-2">
-            <h1>Maquila</h1>
-            <h4>Servicio destinado a la preparación, transformación, elaboración o reparación de mercancías. Esta área se enfoca en entregar valor agregado a los procesos logísticos de nuestros Clientes. Disecom cuenta con procesos estructurados para cada necesidad de los servicios.</h4>
+            <h3>Maquila</h3>
+            <h5>Servicio destinado a la preparación, transformación, elaboración o reparación de mercancías. Esta área se enfoca en entregar valor agregado a los procesos logísticos de nuestros Clientes. Disecom cuenta con procesos estructurados para cada necesidad de los servicios.</h5>
         </div>
     </div>
     <div class="grid-2-no-gap">
         <div class="flex-col-sc padding-3-2">
-            <h1>Reportes on-line y trazabilidad.</h1>
-            <h4>Sistema de gestión logístico WMS, cuenta con: Control de Stock On Line, Apertura de control de Stock por (Propietario, Categoría, Familia, SKU, Ficha técnica, Valorización, etc.), Control de fecha vencimiento o permanencia de Productos, Muebles, POP.</h4>
+            <h3>Reportes on-line y trazabilidad.</h3>
+            <h5>Sistema de gestión logístico WMS, cuenta con: Control de Stock On Line, Apertura de control de Stock por (Propietario, Categoría, Familia, SKU, Ficha técnica, Valorización, etc.), Control de fecha vencimiento o permanencia de Productos, Muebles, POP.</h5>
         </div>
         <div class="box-bg-img" style="background-image:url('${eDisImgTrade.src}');"></div>
     </div>
@@ -119,28 +120,28 @@ const disenoyProduccionInfo = `
 <div class="grid-2-no-gap">
 <div class="box-bg-img" style="background-image:url('${eDisImgTrade.src}');"></div>
 <div class="flex-col-sc padding-3-2">
-    <h1>Diseño y Producción.</h1>
-    <h4>Adaptamos y creamos piezas gráficas para variedad de soportes comerciales.</h4>
+    <h3>Diseño y Producción.</h3>
+    <h5>Adaptamos y creamos piezas gráficas para variedad de soportes comerciales.</h5>
 </div>
 </div>
 <div class="grid-2-no-gap">
 <div class="flex-col-sc padding-3-2">
-    <h1>Promotoría y gestores de venta</h1>
-    <h4>Potencia tus ventas en el PDV con la mejor seleccion de gestores de venta.</h4>
+    <h3>Promotoría y gestores de venta</h3>
+    <h5>Potencia tus ventas en el PDV con la mejor seleccion de gestores de venta.</h5>
 </div>
 <div class="box-bg-img" style="background-image:url('${eDisImgTrade.src}');"></div>
 </div>
 <div class="grid-2-no-gap">
 <div class="box-bg-img" style="background-image:url('${eDisImgTrade.src}');"></div>
 <div class="flex-col-sc padding-3-2">
-    <h1>Stands y Eventos</h1>
-    <h4>Diseño de stands y producción de eventos con anfitriones de marca, dínamicas, sampling y reportes audiovisuales.</h4>
+    <h3>Stands y Eventos</h3>
+    <h5>Diseño de stands y producción de eventos con anfitriones de marca, dínamicas, sampling y reportes audiovisuales.</h5>
 </div>
 </div>
 <div class="grid-2-no-gap">
 <div class="flex-col-sc padding-3-2">
-    <h1>Social media y Web</h1>
-    <h4>Diseño de campañas para RRSS, Landing Pages y sitios escalables y auto-administrables.</h4>
+    <h3>Social media y Web</h3>
+    <h5>Diseño de campañas para RRSS, Landing Pages y sitios escalables y auto-administrables.</h5>
 </div>
 <div class="box-bg-img" style="background-image:url('${eDisImgTrade.src}');"></div>
 </div>

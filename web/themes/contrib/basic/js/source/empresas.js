@@ -7,8 +7,8 @@ if(empContainer){
     const empGrid2col = document.createElement('div')
     
     empContainer.className = 'padding-3-0'
-    empGrid3col.className = 'grid grid-3'
-    empGrid2col.className = 'grid grid-2 margin-top-10'
+    empGrid3col.className = 'grid-col-3'
+    empGrid2col.className = 'grid-col-2 margin-top-10'
     
     empTitle.innerHTML = `
     <h5>Conoce nuestras áreas especializadas</h5>

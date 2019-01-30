@@ -28,7 +28,7 @@ $base-letter-spacing: 0.03em;
 // Other Sizes
 $base-border-radius: 4px;
 $base-spacing: $base-line-height * 1em;
-$small-spacing: $base-spacing / 3;
+$small-spacing: $base-spacing / 5;
 $base-z-index: 0;
 
 // Colors
@@ -66,3 +66,8 @@ $base-duration: 150ms;
 $base-timing: ease;
 
 
+// breakpoints
+$small-screen: 320px;
+$medium-screen: 720px;
+$large-screen: 960px;
+$max-screen: 1200px;

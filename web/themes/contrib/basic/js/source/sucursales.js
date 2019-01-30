@@ -17,7 +17,7 @@ sucurInter.className = 'padding-1-0-1-0'
 sucurStgo.innerHTML = `
 <div class="title-bar padding-1-0-1-0"><h3>Sucursales</h3></div>
 <div><h4 class="text-align-center color-primary">Santiago</h4></div>
-<div class="grid grid-3">
+<div class="grid-col-3">
     <div class="flex-col-ss">
     <h5 class="color-primary">Casa Matriz</h5>
     <p class="before-icon icon-gps">Crescente Errazuriz 1875, Ñuñoa.</p>
@@ -40,7 +40,7 @@ sucurStgo.innerHTML = `
 
 sucurRegiones.innerHTML = `
 <div><h4 class="text-align-center color-primary">Regiones</h4></div>
-<div class="grid grid-4">
+<div class="grid-col-4">
 
     <div class="flex-col-ss">
     <h5 class="color-primary">Iquique</h5>

@@ -1,8 +1,8 @@
-const   anivId = document.getElementById('js-20-anos'),
+const   anivId = document.getElementById('js-anos'),
         anivContent = document.createElement('div'),
         anivImg = new Image()
 
-anivContent.classList = 'grid grid-6 padding-1-0-1-0'
+anivContent.classList = 'grid-col-6 padding-1-0-1-0'
 anivImg.src = imageUrl + 'svg/icon-20-anos.svg'
 
 anivContent.innerHTML = `
@@ -21,17 +21,17 @@ if(anivId){
 const   misionVisionId = document.getElementById('js-mision-vision'),
         misionVisionContent = document.createElement('div')
 
-misionVisionContent.classList = 'grid grid-6 padding-1-0-1-0'
+misionVisionContent.classList = 'grid-col-6 padding-1-0-1-0'
 
 misionVisionContent.innerHTML = `
 <div class="mision-vision__hero flex-col-ss">
     <h2 class="color-primary">Quienes somos</h2>
-    <h3>Grupo Progestion, nace con el objetivo de entregar un servicio de alto valor y lograr sobre pasar las expectativas de nuestros Socios Comerciales, todo esto con innovación y mejora continua, incorporando tecnología en todos nuestros servicios.</h3>
+    <h5>Grupo Progestion, nace con el objetivo de entregar un servicio de alto valor y lograr sobre pasar las expectativas de nuestros Socios Comerciales, todo esto con innovación y mejora continua, incorporando tecnología en todos nuestros servicios.</h5>
 </div>
 <div class="mision-vision__text flex-col-ss">
-    <h2 class="color-primary">Misión</h2>
+    <h3 class="color-primary">Misión</h3>
     <p>Proveer servicios, productos y tecnologías con calidad internacional, bajo un enfoque de mejora y desarrollo de condiciones competitivas que nos fortalezcan en los mercados actuales y futuros, a través de un personal competente y comprometido.</p>
-    <h2 class="color-primary">Visión</h2>
+    <h3 class="color-primary">Visión</h3>
     <p>Consolidarnos como proveedores líderes de servicios integrales en los mercados que participamos, convirtiéndonos en una empresa reconocida por su prestigio internacional como una empresa innovadora, socialmente responsable y de vanguardia.</p>
 </div>
 `
@@ -44,7 +44,7 @@ const   valoresMainId = document.getElementById('js-valores-main'),
         valoresIcon = new Image()
 
 valoresIcon.src = imageUrl + 'svg/icon-copa.svg'
-valoresMainContent.className = 'grid grid-6 padding-1-0-1-0'
+valoresMainContent.className = 'grid-col-8 valores__container'
 
 valoresMainContent.innerHTML = `
 <div class="valores-main flex-col-cc text-align-center">
@@ -70,7 +70,7 @@ valRespetoImg.src = imageUrl + 'svg/icon-hand.svg'
 valSatisfaccionImg.src = imageUrl + 'svg/icon-satisfaccion.svg'
 valCumplimientoImg.src = imageUrl + 'svg/icon-primeros.svg'
 
-valoresCardContent.className = 'grid grid-4 padding-1-0-1-0'
+valoresCardContent.className = 'grid-col-4 padding-1-0-1-0'
 
 valoresCardContent.innerHTML = `
 <div class="card card__bg-blue flex-col-cc text-align-center padding-2-1-2-1">

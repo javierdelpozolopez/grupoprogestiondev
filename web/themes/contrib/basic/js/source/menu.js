@@ -72,36 +72,36 @@ if(menuId){
         <h3>Todas nuestras empresas forman parte de nuestra visión 360.</h3>
         <div id="js-close-popup" class="flex-col-ss"><img src="${svgClose.src}" alt="cerrar"></div>
     </div>
-    <div class="grid grid-3">
+    <div class="grid-col-3-movile-2">
         <div class="flex-col-ss padding-1-5rem sub-menu-box">
             <img src="${logoProgestion.src}" alt="logo progestion">
-            <p>Outsourcing, selección y gestión integral.</p>
-            <a class="btn btn--outlined" href="${empresas['progestion'].link}">conocer más</a>
+            <p class="sub-menu-box__p">Outsourcing, selección y gestión integral.</p>
+            <a class="btn btn--outlined" href="${empresas['progestion'].link}">saber más</a>
         </div>
         <div class="flex-col-ss padding-1-5rem sub-menu-box">
             <img src="${logoEnsti.src}" alt="logo ensti">
-            <p>Servicios Transitorios y subcontratación.</p>
-            <a class="btn btn--outlined" href="${empresas['ensti'].link}">Más información</a>
+            <p class="sub-menu-box__p">Servicios Transitorios y subcontratación.</p>
+            <a class="btn btn--outlined" href="${empresas['ensti'].link}">saber más</a>
         </div>
         <div class="flex-col-ss padding-1-5rem sub-menu-box">
             <img src="${logoAudisis.src}" alt="logo audisis">
-            <p>Desarrollo de tecnología e inteligencia de negocios.</p>
-            <a class="btn btn--outlined" href="${empresas['audisis'].link}">Más información</a>
+            <p class="sub-menu-box__p">Desarrollo de tecnología e inteligencia de negocios.</p>
+            <a class="btn btn--outlined" href="${empresas['audisis'].link}">saber más</a>
         </div>
         <div class="flex-col-ss padding-1-5rem sub-menu-box">
             <img src="${logoCrece.src}" alt="logo crece">
-            <p>Capacitaciones por código Sence o privadas.</p>
-            <a class="btn btn--outlined" href="${empresas['crece'].link}">Más información</a>
+            <p class="sub-menu-box__p">Capacitaciones por código Sence o privadas.</p>
+            <a class="btn btn--outlined" href="${empresas['crece'].link}">saber más</a>
         </div>
         <div class="flex-col-ss padding-1-5rem sub-menu-box">
             <img src="${logoDisecom.src}" alt="logo disecom">
-            <p>Outsourcing, selección y gestión integral</p>
-            <a class="btn btn--outlined" href="${empresas['disecom'].link}">Más información</a>
+            <p class="sub-menu-box__p">Outsourcing, selección y gestión integral</p>
+            <a class="btn btn--outlined" href="${empresas['disecom'].link}">saber más</a>
         </div>
         <div class="flex-col-ss padding-1-5rem sub-menu-box">
             <img src="" alt="logo facility services">
-            <p>Compra reservas y cotizaciones</p>
-            <a class="btn btn--outlined" href="">Más información</a>
+            <p class="sub-menu-box__p">Compra reservas y cotizaciones</p>
+            <a class="btn btn--outlined" href="">saber más</a>
         </div>
     </div>
     `

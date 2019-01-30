@@ -8,7 +8,7 @@ if(eCreceHeroId){
     <div class="padding-3-2 hero__content hero__content--crece">
         <div data-aos="fade-in" class="flex-column-cc text-align-center padding-3-0 hero__box">
         <object class="hero__logo hero__logo--medium" data="${empresas['crece'].logoWhite.src}" type="image/svg+xml"></object>
-        <h4>Otec certificada ISO 9000:1</h4>
+        <h4>Otec certificada ISO 9001</h4>
         </div>
     </div>
     </div>

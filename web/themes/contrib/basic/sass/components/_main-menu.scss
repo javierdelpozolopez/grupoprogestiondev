@@ -1,24 +1,58 @@
-// main--menu
-
+// branding logo sobre blanco
+.header__container{
+    position: fixed;
+    width: 100%;
+    z-index: 10;
+}
+// menú fondo azul
 .main-menu__container{
     background-color: $primary-color;
+    width: 100%;
+    position: fixed;
+    left: 0;
+    z-index: 11;
+    @media only screen and (max-width: $medium-screen){
+        height: 100vh;
+        width: 100vw;
+        padding-top: 24px;
+        top: 72px;
+        transition: transform .2s ease-in-out,
+                    opacity   .2s ease-in-out;
+        transform: translateX(120%);
+        opacity: 0;
+    }
 }
+.main-menu__active{
+    transform: translateX(0%);
+    opacity: .95;
+}
+// menú fondo azul
 .menu--main{
     &__content{
         width: 100%;
-        max-width: 1280px;
         margin: 0 auto;
+        position: fixed;
+        top: 72px;
+        background-color: $primary-color;
         ul{
             width: 100%;
+            max-width: 1280px;
+            margin: 0 auto;
             display: flex;
             flex-wrap: nowrap;
             align-content: center;
             justify-content: space-evenly;
+            @media only screen and (max-width: $medium-screen){
+                flex-direction: column; 
+            }
             li{
             display: flex;
             align-items: center;
             justify-content: center;
             flex-grow: 1;
+                @media only screen and (max-width: $medium-screen){
+                    border-bottom: 1px solid $light-gray;
+                }
                 > a {
                     width: 100%;
                     text-decoration: none;
@@ -26,6 +60,10 @@
                     padding: 1.5rem;
                     color: white;
                     text-transform: capitalize;
+                    @media only screen and (max-width: $medium-screen){
+                        text-align: start;
+                        padding: 1em;
+                    }
                 }
                 > a:hover{
                         background-color: white;
@@ -47,6 +85,9 @@
     height: 100vh;
     background-color: rgba(30,30,30,0.5);
     z-index: 10000;
+    @media only screen and (max-width: $medium-screen){
+        width: 100%;
+    }
 }
 .menu-float__content{
     background-color: $light-gray;
@@ -58,6 +99,11 @@
     position: relative;
     animation-name: showUp;
     animation-duration: .6s;
+    @media only screen and (max-width: $medium-screen){
+        width: 93%;
+    height: 93%;
+    padding: 1.5rem;
+    }
 }
 .sub-menu-box{
     background-color: white;
@@ -67,32 +113,23 @@
     }
 }
 
-.blur{
-    filter: blur(3px);
-}
-
-.menu-float__effect{
-    position: fixed;
-    top: 0;
-    left: 0;
-    width: 100vw;
-    height: 100vh;
-}
-@media only screen and (max-width: 720px){
+@media only screen and (max-width: $medium-screen){
     .hamburger-menu{
         display: flex;
-        background-color: red;
+        background-color:white;
+        border-radius: 4px;
         z-index: 3000;
-        width: 40px;
-        height: 40px;
+        padding-top: 20px;
+        width: 36px;
+        height: 38px;
         position: fixed;
-        top: 15px;
-        right: 10px;
+        top: 25px;
+        right: 25px;
         &:before{
             content: '';
-            width: 40px;
+            width: 36px;
             height: 4px;
-            background-color: $primary-color;
+            background-color: black;
             box-shadow: 0 8px,
                         0 16px;
             position: absolute;
@@ -100,21 +137,12 @@
             left: 0;
         }
     }
-    .main-menu__container{
-        position: fixed;
-        top: 0;
-        left: 100%;
-        z-index: 2000;
-        background-color: $primary-color;
-        height: 100vh;
-        width: 100vw;
-        opacity: .95;
-        padding-top: 20%;
-    }
-    .menu--main__content ul{
-            flex-direction: column; 
-    }
-    .main-menu__active{
-        left: 0%;
+}
+
+
+.sub-menu-box__p{
+    @media only screen and (max-width: $medium-screen){
+        font-size: 12px;
+        line-height: 18px;
     }
 }
