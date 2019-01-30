@@ -4,8 +4,8 @@
 /web/core/
 /web/modules/contrib/
 /web/profiles/contrib/
-/web/sites/default/files/css
-/web/sites/default/files/js
+#/web/sites/default/files/css
+#/web/sites/default/files/js
 # Ignore sensitive information
 /web/sites/*/settings.php
 /web/sites/*/settings.local.php
@@ -22,7 +22,6 @@
 # Ignore .env files as they are personal
 /.env
 
-/web/themes/contrib/basic/css/*
 /web/themes/contrib/basic/*.scssc
 /web/themes/contrib/basic/*.sassc
 /web/themes/contrib/basic/.sass-cache

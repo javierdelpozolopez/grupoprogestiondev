@@ -1,0 +1,22 @@
+.aniv__img {
+  grid-column: 1 / 3;
+}
+
+.aniv__text {
+  grid-column: 4 / 7;
+}
+
+.mision-vision__hero {
+  grid-column: 1 / 4;
+}
+
+.mision-vision__text {
+  grid-column: 5 / 7;
+}
+
+.valores-main {
+  grid-column: 3 / 5;
+}
+
+/*# sourceMappingURL=data:application/json;base64,eyJ2ZXJzaW9uIjozLCJzb3VyY2VzIjpbImxheW91dC9hcmVhcy9sYXlvdXQvYXJlYXMvbm9zb3Ryb3Muc2NzcyJdLCJuYW1lcyI6W10sIm1hcHBpbmdzIjoiQUFHSTtFQUNJLG1CQUFrQjtDQUNyQjs7QUFDRDtFQUNJLG1CQUFrQjtDQUNyQjs7QUFLRDtFQUNJLG1CQUFrQjtDQUNyQjs7QUFDRDtFQUNJLG1CQUFrQjtDQUNyQjs7QUFHTDtFQUNJLG1CQUFrQjtDQUNyQiIsImZpbGUiOiJ0by5jc3MifQ== */
+/*# sourceMappingURL=nosotros.css.map */
