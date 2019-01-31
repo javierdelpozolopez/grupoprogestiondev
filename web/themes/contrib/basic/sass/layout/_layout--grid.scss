@@ -33,10 +33,8 @@ body {
 
 .container {
   //@include grid-container;
-
-  margin: auto;
-  max-width: $max-screen;
-  padding: 0rem 2rem;
+  margin: 0 auto;
+  max-width: 100%;
 }
 
 //#content-wrapper {

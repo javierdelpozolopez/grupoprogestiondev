@@ -24,6 +24,7 @@ regions:
   difrent_bg_content: Difrent bg content
   two_grid_content: 'two-grid-content'
   content: Content
+  difrent_bg_content_two: 'difrent bg content two'
   contact_info: 'Contact Info'
   news: 'news'
   sidebar_first: 'Sidebar first'

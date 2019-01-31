@@ -43,8 +43,8 @@
       </div>
     </div>
     {% if page.page_title %}
-    <div class="container-bg__title">
-      <div class="container">
+    <div class="container container-bg__title">
+      <div class="content">
             {{ page.page_title }}
       </div>
     </div>
@@ -56,13 +56,13 @@
     {% endif %}
     {% if page.difrent_bg_content %}
     <div class="container-bg__secondary__color">
-      <div class="container">
+      <div class="content">
             {{ page.difrent_bg_content }}
       </div>
     </div>
     {% endif %}
     <div class="container">
-      <div id="content-wrapper">
+      <div class="content" id="content-wrapper">
         <section class="main-content" id="content">
 
           <div id="content-header">
@@ -122,8 +122,15 @@
 
       </div><!-- /#content-wrapper -->
     </div>
-    <div class="container-bg__primary__color padding-3-0">
-      <div class="container">
+    {% if page.difrent_bg_content_two %}
+    <div class="container container-bg__secondary__color">
+      <div class="content">
+            {{ page.difrent_bg_content_two }}
+      </div>
+    </div>
+    {% endif %}
+    <div class="container container-bg__primary__color padding-3-0">
+      <div class="content">
             {{ page.contact_info }}
       </div>
     </div>
@@ -138,8 +145,8 @@
   <!-- ______________________ FOOTER _______________________ -->
 
   {% if page.footer|render %}
-    <footer id="footer">
-      <div class="container">
+    <footer class="container" id="footer">
+      <div class="content">
         <div id="footer-region" class="footer__content">
           {{ page.footer }}
         </div>
@@ -148,7 +155,7 @@
   {% endif %}
   {% if page.footer_small|render %}
     <div class="footer-small__container" id="footer-small">
-      <div class="container">
+      <div class="content">
         <div id="footer-small-region">
           {{ page.footer_small }}
         </div>

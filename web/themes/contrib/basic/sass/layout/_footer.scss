@@ -14,7 +14,6 @@ footer{
     grid-template-columns: 1.8fr 1fr 1fr 1fr;
     grid-template-rows: 60px 1fr;
     grid-gap: 30px;
-    padding: 2rem 0;
     @media only screen and (max-width: $medium-screen){
         grid-template-columns: 1fr;
         grid-template-rows: 60px 40px 1fr 1fr;
@@ -32,9 +31,9 @@ footer .block-sitebranding,.block-sitebranding--2{
         background-color: $primary-color;
     }
     &__content{
-        padding: 1rem 0;
         @include flex(row,center,space-between);
         flex-wrap: nowrap;
+        padding: 0;
         align-items: center;
         justify-content: space-between;
         width: 100%;

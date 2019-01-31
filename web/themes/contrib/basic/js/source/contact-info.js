@@ -13,8 +13,6 @@ contactInfoImgChile.src = imageUrl + 'bandera-chile.png'
 contactInfoImgPeru.src = imageUrl + 'bandera-peru.png'
 
 contactInfoContent.innerHTML = `
-<div class="contact-info__title"><h4 class="text__white">CONTÁCTANOS A:</h4></div>
-
 <div class="contact-info__content-box grid contact-info-grid">
     <div class="contact-info__box icon-mail">
         <img class="contact-info__icon" src="${contactInfoImgMail.src}" alt="icon mail">

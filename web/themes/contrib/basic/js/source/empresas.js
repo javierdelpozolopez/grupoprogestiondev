@@ -6,7 +6,6 @@ if(empContainer){
     const empGrid3col = document.createElement('div')
     const empGrid2col = document.createElement('div')
     
-    empContainer.className = 'padding-3-0'
     empGrid3col.className = 'grid-col-3'
     empGrid2col.className = 'grid-col-2 margin-top-10'
     

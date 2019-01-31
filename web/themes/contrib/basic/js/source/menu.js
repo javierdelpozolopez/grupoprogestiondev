@@ -38,11 +38,11 @@ mainMenuContent.innerHTML = `
 <ul>
 <li><a href="/inicio">Inicio</a></li>
 <li class="relative js-toggle" id="js-toggle"><a id="js-main-menu-empresas" href="javascript:void(0)" role="button">Empresas</a></li>
-<li><a href="/servicios">Servicios</a></li>
-<li><a href="/nosotros">Nosotros</a></li>
-<li><a href="/blog">Blog</a></li>
-<li><a href="/trabaja-con-nosotros">Cantidatos</a></li>
-<li><a href="/contacto">Contacto</a></li>
+<li><a href="${Url}/servicios">Servicios</a></li>
+<li><a href="${Url}/nosotros">Nosotros</a></li>
+<li><a href="${Url}/blog">Blog</a></li>
+<li><a target="_blank" href="http://reclutamiento.grupoprogestion.com/seleccion/">Cantidatos</a></li>
+<li><a href="${Url}/contacto">Contacto</a></li>
 </ul>
 `
 

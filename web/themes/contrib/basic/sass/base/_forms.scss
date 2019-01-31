@@ -73,6 +73,10 @@ textarea {
   margin-bottom: .7rem;
 }
 
+[type="number"]{
+  width: 100%;
+}
+
 [type="checkbox"],
 [type="radio"] {
   margin-right: $small-spacing / 2;

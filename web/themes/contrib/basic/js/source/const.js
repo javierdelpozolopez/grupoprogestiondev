@@ -17,7 +17,8 @@ const   imgEnsti = new Image(),
 
         svgClose = new Image(),
 
-        imageUrl = '../themes/contrib/basic/images/source/';
+        imageUrl = './themes/contrib/basic/images/source/',
+        Url = './';
 
 imgEnsti.src = imageUrl + 'emp-ensti.jpg';
 imgAudisis.src = imageUrl + 'emp-audisis.jpg';
@@ -44,34 +45,34 @@ const empresas = {
         logo: logoEnsti,
         logoWhite: logoEnstiWhite,
         desc: 'Reclutamiento, selección y contratación de personal.',
-        link: '/empresas/ensti'
+        link: Url + 'empresas/ensti'
     },
     'audisis': {
         img: imgAudisis,
         logo: logoAudisis,
         logoWhite: logoAudisisWhite,
         desc: 'Desarrollo de tecnología e inteligencia de negocios.',
-        link: '/empresas/audisis'
+        link: Url + 'empresas/audisis'
     },
     'crece': {
         img: imgCrece,
         logo: logoCrece,
         logoWhite: logoCreceWhite,
         desc: 'Capacitaciones por código Sence o privadas.',
-        link: '/empresas/crece'
+        link: Url + 'empresas/crece'
     },
     'disecom': {
         img: imgDisecom,
         logo: logoDisecom,
         logoWhite: logoDisecomWhite,
         desc: 'Diseño, trade, marketing y producción',
-        link: '/empresas/disecom'
+        link: Url + 'empresas/disecom'
     },
     'progestion':{
         img: imgProgestion,
         logo: logoProgestion,
         logoWhite: logoProgestionWhite,
         desc: 'Outsourcing y gestión integral',
-        link: '/empresas/progestion'
+        link: Url + 'empresas/progestion'
     }
 }

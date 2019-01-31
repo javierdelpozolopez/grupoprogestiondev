@@ -18,7 +18,6 @@ global:
     js/build/contact-info.js: {}
     js/build/header-contact-info.js: {}
     js/build/footer-small.js: {}
-    js/build/social-media.js: {}
     js/build/nosotros.js: {}
     js/build/sucursales.js: {}
     js/build/servicios.js: {}
