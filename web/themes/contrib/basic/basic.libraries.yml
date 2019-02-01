@@ -27,7 +27,6 @@ global:
     js/build/emp-ensti.js: {}
     js/build/emp-crece.js: {}
     js/build/emp-progestion.js: {}
-    js/build/menu.js: {} 
     js/aos/aos.js: {}
     js/build/scripts.js: {}
   # dependencies:

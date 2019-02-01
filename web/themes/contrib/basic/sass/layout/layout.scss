@@ -11,10 +11,7 @@
 @import "areas/nosotros";
 
 #main{
-    padding-top: 144px;
-    @media only screen and (max-width: $medium-screen){
-        padding-top: 80px;
-    }
+    padding-top: 56px;
 }
 .absolute-top-right{
     position: absolute;
@@ -264,7 +261,7 @@
 .slick-dots{
     position: absolute;
     top: 90%;
-    z-index: 1000;
+    z-index: 100;
 }
 
 // contact info

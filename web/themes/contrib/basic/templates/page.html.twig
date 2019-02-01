@@ -16,7 +16,7 @@
   {% if page.header %}
     <header class="header__container" id="header">
       <div class="container">
-        <div id="header-region" class="header__content">
+        <div id="header-region" class="header__content content">
           {{ page.header }}
         </div>
       </div>
@@ -26,7 +26,7 @@
   {% if page.main_menu or secondary_menu %}
     <nav id="navigation" class="menu{% if main_menu %} with-primary{% endif %}{% if secondary_menu %} with-secondary{% endif %}">
       <div class="main-menu__container" id="js-main-menu">
-        <div class="main-menu__content container">
+        <div class="main-menu__content content">
         {{ page.main_menu }}
         </div>
         {{ secondary_menu }}
