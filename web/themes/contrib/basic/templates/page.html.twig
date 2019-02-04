@@ -14,19 +14,17 @@
   {% endif %}
 
   {% if page.header %}
-    <header class="header__container" id="header">
-      <div class="container">
-        <div id="header-region" class="header__content content">
+    <header class="header__container container" id="header">
+        <div id="header-region" class="header__content">
           {{ page.header }}
         </div>
-      </div>
     </header><!-- /#header -->
   {% endif %}
 
   {% if page.main_menu or secondary_menu %}
     <nav id="navigation" class="menu{% if main_menu %} with-primary{% endif %}{% if secondary_menu %} with-secondary{% endif %}">
       <div class="main-menu__container" id="js-main-menu">
-        <div class="main-menu__content content">
+        <div class="main-menu__content">
         {{ page.main_menu }}
         </div>
         {{ secondary_menu }}
@@ -44,7 +42,7 @@
     </div>
     {% if page.page_title %}
     <div class="container container-bg__title">
-      <div class="content">
+      <div class="title__content">
             {{ page.page_title }}
       </div>
     </div>

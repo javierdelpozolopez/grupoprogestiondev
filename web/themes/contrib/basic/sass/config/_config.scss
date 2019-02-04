@@ -24,7 +24,9 @@
 // Import variables and mixins to be used (Bourbon and Neat)
 @import "../../node_modules/bourbon/core/bourbon";
 @import "../../node_modules/bourbon-neat/core/neat";
-
+@import "../../node_modules/@material/button/mdc-button";
+@import "../../node_modules/@material/typography/mdc-typography";
+@import "../../node_modules/@material/button/mdc-button";
 // Override some default grid settings and establish breakpoints
 @import "grid-settings";
 
