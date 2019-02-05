@@ -15,18 +15,10 @@ global:
     js/modernizr.js: {}
     js/build/const.js: {}
     js/build/empresas.js: {}
-    js/build/contact-info.js: {}
-    js/build/header-contact-info.js: {}
     js/build/footer-small.js: {}
     js/build/nosotros.js: {}
-    js/build/sucursales.js: {}
     js/build/servicios.js: {}
-    js/build/trabaja-con-nosotros.js: {}
-    js/build/emp-disecom.js: {} 
     js/build/emp-audisis.js: {}
-    js/build/emp-ensti.js: {}
-    js/build/emp-crece.js: {}
-    js/build/emp-progestion.js: {}
     js/aos/aos.js: {}
     js/build/scripts.js: {}
   # dependencies:

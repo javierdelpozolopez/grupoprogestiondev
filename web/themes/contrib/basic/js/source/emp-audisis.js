@@ -2,23 +2,6 @@ const   eAudisisId = document.getElementById('js-emp-audisis-content'),
         eAudisisHeroId = document.getElementById('js-emp-audisis-hero'),
         eAudisisContainer = document.createElement('div')
 
-
-if(eAudisisHeroId){
-    const eAudisisHeroContent = document.createElement('div')
-
-    eAudisisHeroContent.innerHTML = `
-    <div class="hero__container" style="background-image: url(${empresas['audisis'].img.src});">
-    <div class="padding-3-2 hero__content hero__content--audisis">
-        <div data-aos="fade-in" class="flex-column-cc text-align-center padding-3-0 hero__box">
-        <object class="hero__logo hero__logo--medium" data="${empresas['audisis'].logoWhite.src}" type="image/svg+xml"></object>
-        <h4>Comprometidos en que nuestros clientes crezcan, apoyándolos con herramientas tecnológicas customizables para la toma de decisiones estratégicas</h4>
-        </div>
-    </div>
-    </div>
-    `
-    eAudisisHeroId.appendChild(eAudisisHeroContent)
-}
-
 if(eAudisisId){
     const imageUrl = './../themes/contrib/basic/images/source/'
     const   imgOne = new Image(),

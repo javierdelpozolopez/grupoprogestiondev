@@ -70,25 +70,25 @@ valRespetoImg.src = imageUrl + 'svg/icon-hand.svg'
 valSatisfaccionImg.src = imageUrl + 'svg/icon-satisfaccion.svg'
 valCumplimientoImg.src = imageUrl + 'svg/icon-primeros.svg'
 
-valoresCardContent.className = 'grid-col-4 padding-1-0-1-0'
+valoresCardContent.className = 'grid-col-4 padding__2'
 
 valoresCardContent.innerHTML = `
-<div class="card card__bg-blue flex-col-cc text-align-center padding-2-1-2-1">
+<div class="card card__bg-blue flex-col-cc text-align-center padding__2">
     <img class="card__icon-60px" src="${fomentoImg.src}" alt="icon"/>
     <p class="text__white">El fomento al desarrollo profesional</p>
 </div>
 
-<div class="card card__bg-blue flex-col-cc text-align-center padding-2-1-2-1">
+<div class="card card__bg-blue flex-col-cc text-align-center padding__2">
     <img class="card__icon-60px" src="${valRespetoImg.src}" alt="icon"/>
     <p class="text__white">El respeto a nuestros clientes y compañeros</p>
 </div>
 
-<div class="card card__bg-blue flex-col-cc text-align-center padding-2-1-2-1">
+<div class="card card__bg-blue flex-col-cc text-align-center padding__2">
     <img class="card__icon-60px" src="${valSatisfaccionImg.src}" alt="icon"/>
     <p class="text__white">La satisfacción de nuestros clientes</p>
 </div>
 
-<div class="card card__bg-blue flex-col-cc text-align-center padding-2-1-2-1">
+<div class="card card__bg-blue flex-col-cc text-align-center padding__2">
     <img class="card__icon-60px" src="${valCumplimientoImg.src}" alt="icon"/>
     <p class="text__white">El cumplimiento de nuetros compromisos</p>
 </div>

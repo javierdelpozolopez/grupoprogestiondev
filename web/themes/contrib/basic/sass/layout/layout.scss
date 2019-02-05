@@ -95,6 +95,7 @@
 }
 .text-align-center{
     text-align: center;
+    margin: 0 auto;
 }
 .margin-top-10{
     margin-top: 10px
@@ -241,7 +242,6 @@
 .slick-dots{
     position: absolute;
     top: 90%;
-    z-index: 10;
 }
 
 // contact info
@@ -458,6 +458,24 @@
         background-position: center;
         background-repeat: no-repeat;
         background-size: cover;
+        &--progestion{
+            background-image: url('../../images/source/emp-progestion-650x260.jpg');
+        }
+        &--ensti{
+            background-image: url('../../images/source/emp-ensti-650x260.jpg');
+        }
+        &--audisis{
+            background-image: url('../../images/source/emp-audisis-650x260.jpg');
+        }
+        &--progestion{
+            background-image: url('../../images/source/emp-progestion-650x260.jpg');
+        }
+        &--crece{
+            background-image: url('../../images/source/emp-crece-650x260.jpg');
+        }
+        &--disecom{
+            background-image: url('../../images/source/emp-disecom-650x260.jpg');
+        }
     }
     &__content{
         min-height: 400px;
@@ -481,12 +499,13 @@
         }
     }
     &__box{
+        padding: 3em 0;
         text-align: center;
         max-width: 1000px;
         margin: 0 auto;
         .hero__logo{
             width: 100%;
-            max-width: 520px;
+            max-width: 370px;
             padding: 1.5em;
             &--medium{
                 max-width: 320px;
